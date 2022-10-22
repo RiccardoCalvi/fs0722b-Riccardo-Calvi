@@ -1,15 +1,61 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Iscrizione - Epicfy</title>
 </head>
 <body>
-    <h1>Interazioni</h1>
-    <div>
-        
-    </div>
+	<h1 style="text-align: center;">Epicfy</h1>
+
+		<div style="text-align: center;" >
+			<form onsubmit="alert('Registrazione Inviata')">
+
+				<div style="margin-bottom: 20px;">
+					<input type="text" placeholder="Nome">
+					<input type="text" placeholder="Cognome">
+				</div>
+
+				<div style="margin-bottom: 20px;">
+					<input type="email" placeholder="Email">
+					<input type="password" placeholder="Password">
+				</div>
+
+				<div style="margin-bottom: 20px;">
+					<p>Data di Nascita</p>
+					<input type="date" placeholder="Data di Nascita">
+				</div>
+
+				<div style="margin-bottom: 20px;">
+					<input type="number" placeholder="Cellulare">
+				</div>
+
+				<h3>Generi</h3>
+				<p style="margin-top: -15px;">Indica quali generi musicali preferisci</p>
+				<div style="margin-bottom: 20px;">
+					<input type="checkbox" > Rock
+					<input type="checkbox" > Dance
+					<br>
+					<input type="checkbox" > Hip-Hop
+					<input type="checkbox" > Rap
+					<br>
+					<input type="checkbox" > Classica
+					<input type="checkbox" > Country
+				</div>
+
+                <h4>Termini e Condizioni</h4>
+                <p style="margin-top: -15px;">Accetto i termini e condizioni</p>
+				<div style="margin-bottom: 20px;">
+                    <input type="radio" > si
+
+				</div>
+				<div style="margin-bottom: 20px;">
+					<button type="reset"> Cancella</button>
+					<button type="submit"> Invia registrazione</button>
+				</div>
+			</form>
+		</div>
+
 </body>
 </html>
