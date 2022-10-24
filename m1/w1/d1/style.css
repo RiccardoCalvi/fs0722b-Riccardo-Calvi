@@ -49,17 +49,3 @@ footer {
 .stampa {
     margin-bottom: 45px;
 }
-
-.container {
-    display: flex;
-    justify-content: space-around;
-}
-.container div{
-    padding: 15px;
-    border: 1px solid grey;
-    margin-bottom: 25px;
-}
-
-.container h3{
-    text-align: center;
-}
