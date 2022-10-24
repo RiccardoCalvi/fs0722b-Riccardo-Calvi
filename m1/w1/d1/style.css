@@ -1,0 +1,65 @@
+body {
+    margin: 45px 45px 0 45px;
+}
+
+h2 {
+    text-align: center;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding: 15px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+}
+
+.profilo {
+    width: 250px;
+    text-align: center;
+}
+.profilo img {
+    width: 100%;
+}
+
+.contatti {
+    margin-top: 45px;
+}
+
+.contatti img {
+    width: 35px;
+}
+
+.contatti p{
+    display: inline;
+}
+
+.stampa {
+    margin-bottom: 45px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+.container div{
+    padding: 15px;
+    border: 1px solid grey;
+    margin-bottom: 25px;
+}
+
+.container h3{
+    text-align: center;
+}
