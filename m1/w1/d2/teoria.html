@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <style>
+        table td, table tr{
+            /* width: 100%; */
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    
+    <table>
+        <thead>
+            <th>col 1</th>
+            <th>col 2</th>
+            <th>col 3</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td rowspan="2">2 - 5</td>
+                
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                
+                <td colspan="2">8 -9</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td>Prova Footer</td>
+            <td>Fine</td>
+        </tfoot>
+    </table>
+
+    <hr>
+
+    <form style="margin-top: 200px;">
+        <input type="text" placeholder="Ciao">
+
+        <select>
+            <option value="">--</option>
+            <option value="prova">prova</option>
+            <option value="prova1">prova1</option>
+            <option value="prova2">prova2</option>
+            <option value="prova3">prova3</option>
+        </select>
+
+        <textarea cols="30" rows="3">
+
+        </textarea>
+    </form>
+
+
+</body>
+</html>
