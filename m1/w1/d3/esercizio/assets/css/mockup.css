@@ -64,6 +64,13 @@ figure {
     max-width: 75%;
 }
 
+footer p{
+    display: block;
+    margin: 30px auto 0 auto;
+    width: 75%;
+    padding: 10px;
+}
+
 main figure img {
     max-width: 100%;
     border: 0px solid white;
