@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color: #107777;
+}
+
+/*
+  _   _                _
+ | | | | ___  __ _  __| | ___ _ __
+ | |_| |/ _ \/ _` |/ _` |/ _ \ '__|
+ |  _  |  __/ (_| | (_| |  __/ |
+ |_| |_|\___|\__,_|\__,_|\___|_|
+
+*/
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+
+}
+
+header img {
+    display: block;
+    width: 200px;
+    margin: 20px auto 20px auto;
+}
+
+header .sub-header{
+    background-color: #ffd50033;
+    padding: 3px;
+    text-align: center;
+    border-top: 1px solid rgba(255, 213, 0, 080);
+    color: #107777;
+    box-shadow: 5px 0px 10px #00000020;
+}
+
+main {
+    display: block;
+    margin: 60px auto 0 auto;
+    width: 60%;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav div{
+    margin: 0 40px;
+}
+nav a{
+    text-decoration: none;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+
+/*
+  __  __    _    ___ _   _
+ |  \/  |  / \  |_ _| \ | |
+ | |\/| | / _ \  | ||  \| |
+ | |  | |/ ___ \ | || |\  |
+ |_|  |_/_/   \_\___|_| \_|
+
+*/
+
+#hero{
+    display: block;
+    margin-top: 200px;
+    height: 30vh;
+    background:linear-gradient(0deg, #10777770, #00000090), url(../focaccia.png);
+    border: 0px solid white;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#hero h1{
+    padding: 10% 0 0 40%;
+    color: white;
+    text-shadow: 1px 3px 6px #00000070;
+}
+#hero-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#hero-inner li {
+    color: white;
+    list-style-type: none;
+}
+#hero-inner ul {
+    margin: 80px 100px 0 0;
+}
