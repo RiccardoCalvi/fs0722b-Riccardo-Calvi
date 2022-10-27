@@ -4,6 +4,7 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="assets/css/reset.css">
 		<link rel="stylesheet" href="assets/css/font-awesome.css">
 		<link rel="stylesheet" href="assets/css/style.css">
 		<title>Come creare un template per i post - Epicode</title>
@@ -13,7 +14,7 @@
 		<header>
 			<div>
 				<a href="#"> <img src="assets/img/logo.svg" alt="logo" id="logo"> </a>
-				<h2 id="sottotitolo">Epicode - Blog dei Developers</h2>
+				<h2 id="sottotitolo">Epicode - Il Blog dei Developers</h2>
 				<nav>
 					<div>
 						<a href="#">Home</a>
@@ -39,7 +40,7 @@
 
                 <p>Le varie aree saranno quindi suddivise in:</p>
 
-                <ul>
+                <ul class="list disc">
                     <li>
                         Contenuti di intestazione del tag <code> &lt;header&gt; </code>
                     </li>
@@ -56,7 +57,7 @@
                 <p></p>
                 <p>Formattazione del codice <br> Il testo dell'articolo dovrà essere formattato per identificare tutte le parti da <b>selezionare con i CSS</b>. Perciò i passi saranno:</p>
         
-                <ol>
+                <ol class="list decimal">
                     <li>Progettare su carta il markup finale, assegnando ad ogni specifico testo il tag appropriato</li>
                     <li>Scrivere l'HTML dai tag esterni a quelli interni e dall'alto verso il basso</li>
                     <li>Applicare gli stili CSS</li>
@@ -115,7 +116,7 @@
             <p>Un test di validazione potrà essere fatto tramite il <a href="#">tool online</a> dedicato allo scopo. Una volta ottimizzato il tutto, avremo raggiunto il nostro obiettivo ed essere stati dei veri developers come loro:</p>
 
             <div id="video">
-                <iframe id="video_yt" width="100%" height="250px" src="https://www.youtube.com/embed/B82GbfAPXT8?controls=0" title="YouTube video player" frameborder="0"></iframe>
+                <iframe id="video_yt" width="100%" height="160px" src="https://www.youtube.com/embed/B82GbfAPXT8?controls=0" title="YouTube video player" frameborder="0"></iframe>
             </div>
 
             <div id="newsletter">
@@ -124,7 +125,7 @@
                 <p>Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla nostra newsletter:</p>
 
                 <form onsubmit="!alert('Iscrizione inviata correttamente')">
-                    <input type="email" placeholder="Inserisci la tua email">
+                    <input type="email" placeholder="Inserisci la tua email" required>
                     <button>Iscriviti!</button>
                 </form>
 
@@ -158,7 +159,7 @@
         <footer>
             <div>
                 <p>Blog Epicode © 2022</p>
-                <p>Testata online di Mario Rossi, registrata con prot. n.213/2018 - via Luigi Einaudi 2 - Milano. P.IVA 00112233.<a href="mailto:info@epicode.school">info@epicode.school</a></p>
+                <p>Testata online di Mario Rossi, registrata con prot. n.213/2018 - via Luigi Einaudi 2 - Milano. P.IVA 00112233. <a href="mailto:info@epicode.school">info@epicode.school</a></p>
             </div>
         </footer>
 
