@@ -27,7 +27,6 @@ a {
     color: #0f73c5;
 }
 
-
 /* HEADER */
 header {
     display: block;
@@ -108,6 +107,7 @@ th {
     background-color: mediumblue	;
     color: white;
 }
+
 #tabella table caption {
     text-align: center;
     font-weight: 600;
@@ -156,7 +156,6 @@ th {
     margin-bottom: 25px;
 }
 
-
 /* FOOTER */
 footer {
     display: block;
@@ -172,10 +171,6 @@ footer {
 footer a {
     color: darkmagenta;
 }
-
-
-
-
 
 /* CLASSI */
 .forced_inline {
@@ -203,12 +198,3 @@ footer a {
 .cat {
     margin-top: 0px;
 }
-
-/* ELEMENTI NEL MAIN - ARTICLE */
-
-/* TABELLE */
-
-/* FORM */
-
-/* ELEMENTI NELL' ASIDE */
-
