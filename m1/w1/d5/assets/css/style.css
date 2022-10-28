@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap');
+
+/*
+   ____ _     ___  ____    _    _
+  / ___| |   / _ \| __ )  / \  | |
+ | |  _| |  | | | |  _ \ / _ \ | |
+ | |_| | |__| |_| | |_) / ___ \| |___
+  \____|_____\___/|____/_/   \_\_____|
+
+*/
+
+
+body {
+  background-image: url("../img/sfondo.png");
+  line-height: 1.65rem;
+  color: #393d41;
+  font-family: 'Open Sans', sans-serif;
+}
+
+b {
+  font-weight: 600;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+a {
+  font-weight: 500;
+}
+
+p{
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+h1 {
+  color: #25a2c3;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 2rem;
+  font-size: 2rem;
+  margin: 0 0 0.5em 0;
+}
+h2 {
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5rem;
+  font-size: 1.8rem;
+  margin: 0 0 0.5em 0;
+}
+
+h3 {
+  color: #25a2c3;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 2rem;
+  font-size: 1.5rem;
+  margin: 0 0 0.5em 0;
+}
+
+/*
+  _   _ _____    _    ____  _____ ____
+ | | | | ____|  / \  |  _ \| ____|  _ \
+ | |_| |  _|   / _ \ | | | |  _| | |_) |
+ |  _  | |___ / ___ \| |_| | |___|  _ <
+ |_| |_|_____/_/   \_\____/|_____|_| \_\
+
+*/
+
+header {
+  display: block;
+  background-color: black;
+  padding: 30px 0;
+}
+
+header img{
+  display: block;
+  width: 30%;
+  margin: 0 auto;
+}
+
+/*
+  __  __    _    ___ _   _
+ |  \/  |  / \  |_ _| \ | |
+ | |\/| | / _ \  | ||  \| |
+ | |  | |/ ___ \ | || |\  |
+ |_|  |_/_/   \_\___|_| \_|
+
+*/
+
+#hero {
+  background-image: url(../images/banner.jpg);
+  min-height: 50vh;
+  background-position: center center;
+  background-size: cover;
+}
+
+#hero div{
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+  padding: 70px 0;
+  text-align: center;
+}
+
+#notebook img {
+  width: 90%;
+  border: 0px solid transparent;
+  border-radius: 80%;
+  margin: 30px 0;
+}
+
+#testimonial {
+  background-color: #e22d0e;
+  min-height: 30vh;
+  color: white;
+  text-align: center;
+}
+
+#testimonial blockquote {
+  margin-top: 40px;
+}
+
+#testimonial p {
+  font-style: italic;
+}
+
+#testimonial figcaption{
+  font-size: 1.5rem;
+}
+
+#testimonial cite {
+  font-size: initial;
+}
+
+#testimonial div {
+  padding: 5vh 0;
+}
+
+
+/*
+     _    ____ ___ ____  _____
+    / \  / ___|_ _|  _ \| ____|
+   / _ \ \___ \| || | | |  _|
+  / ___ \ ___) | || |_| | |___
+ /_/   \_\____/___|____/|_____|
+
+*/
+
+aside {
+
+}
+
+
+/*
+  _____ ___   ___ _____ _____ ____
+ |  ___/ _ \ / _ \_   _| ____|  _ \
+ | |_ | | | | | | || | |  _| | |_) |
+ |  _|| |_| | |_| || | | |___|  _ <
+ |_|   \___/ \___/ |_| |_____|_| \_\
+
+*/
+
+footer{
+  margin-bottom: -10vh;
+  padding: 30px;
+  background-color: #25a2c3;
+}
+
+footer div {
+  display: block;
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+footer ul li {
+  list-style: none;
+}
+
+footer ul {
+  padding-bottom: 30px;
+  border-bottom: 1px solid white;
+}
+
+footer a, footer h2, footer p, footer address {
+  color: white;
+}
+
+footer h2 {
+
+  margin-bottom: 30px;
+
+}
+
+
+/*
+   ____ _        _    ____ ____ ___
+  / ___| |      / \  / ___/ ___|_ _|
+ | |   | |     / _ \ \___ \___ \| |
+ | |___| |___ / ___ \ ___) |__) | |
+  \____|_____/_/   \_\____/____/___|
+
+*/
+
+.button {
+	background-color: #f04c2f;
+	border-radius: 5px;
+	border: 0px solid #000000;
+	display: inline-block;
+	color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+	font-size: 17px;
+  font-weight: 600;
+	padding: 16px 40px;
+  text-transform: uppercase;
+	text-decoration: none;
+  transition: transform 0.5s;
+}
+
+.button:hover {
+  transform: scale(0.95);
+}
+
+.align-center {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.blocco {
+  margin: 0 auto 40px auto;
+  width: 90%;
+  padding-bottom: 20px;
+  border: 1px solid #b0afaf65;
+  border-radius: 4px;
+}
+
+.blocco img {
+  width: 100%;
+}
