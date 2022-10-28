@@ -15,6 +15,7 @@ body {
   line-height: 1.65rem;
   color: #393d41;
   font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
 }
 
 b {
@@ -148,8 +149,20 @@ header img{
 
 */
 
-aside {
 
+aside article div{
+  
+  padding: 20px 15px;
+}
+
+aside article a {
+  color: initial;
+  font-weight: initial;
+  text-decoration: none;
+}
+
+aside article h3 {
+  display: inline;
 }
 
 
@@ -231,7 +244,6 @@ footer h2 {
 .blocco {
   margin: 0 auto 40px auto;
   width: 90%;
-  padding-bottom: 20px;
   border: 1px solid #b0afaf65;
   border-radius: 4px;
 }
