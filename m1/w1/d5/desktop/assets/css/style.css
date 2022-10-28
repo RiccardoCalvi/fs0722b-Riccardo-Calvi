@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+/*
+   ____ _     ___  ____    _    _
+  / ___| |   / _ \| __ )  / \  | |
+ | |  _| |  | | | |  _ \ / _ \ | |
+ | |_| | |__| |_| | |_) / ___ \| |___
+  \____|_____\___/|____/_/   \_\_____|
+
+*/
+
+
+body {
+  background-image: url("../img/sfondo.png");
+  color: #393d41;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.65rem;
+}
+
+b {
+  font-weight: 600;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+a {
+  font-weight: 500;
+}
+
+p{
+  font-size: 1.2rem;
+  margin: 1rem 0;
+
+}
+
+h1 {
+  color: #25a2c3;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5rem;
+  font-size: 3rem;
+  margin: 0 0 0.5em 0;
+}
+h2 {
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5rem;
+  font-size: 1.8rem;
+  margin: 0 0 0.5em 0;
+}
+
+h3 {
+  color: #25a2c3;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 2rem;
+  font-size: 1.6rem;
+  margin: 0 0 0.5em 0;
+}
+
+h4 {
+  color: #25a2c3;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 2rem;
+  font-size: 1.3rem;
+  margin: 0 0 0.5em 0;
+}
+
+/*
+  _   _ _____    _    ____  _____ ____
+ | | | | ____|  / \  |  _ \| ____|  _ \
+ | |_| |  _|   / _ \ | | | |  _| | |_) |
+ |  _  | |___ / ___ \| |_| | |___|  _ <
+ |_| |_|_____/_/   \_\____/|_____|_| \_\
+
+*/
+
+header {
+  display: block;
+  background-color: black;
+  padding: 42px 0;
+}
+
+header img{
+  display: block;
+  width: 15%;
+  margin-left: 50px;
+}
+
+/*
+  __  __    _    ___ _   _
+ |  \/  |  / \  |_ _| \ | |
+ | |\/| | / _ \  | ||  \| |
+ | |  | |/ ___ \ | || |\  |
+ |_|  |_/_/   \_\___|_| \_|
+
+*/
+
+#hero {
+  background-image: url(../images/banner.jpg);
+  height: 520px;
+  background-position: center center;
+  background-size: cover;
+}
+
+#hero div {
+  display: block;
+  width: 85%;
+  margin: 0 auto;
+  padding: 180px 0;
+  text-align: center;
+}
+
+#hero h1 {
+  line-height: 3rem;
+}
+
+#hero p {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+#benefits {
+  margin-top: -50px;
+}
+
+#benefits div {
+  margin: 50px 0;
+}
+
+#benefits p {
+  line-height: 2.5rem;
+  font-size: 1.5rem;
+}
+
+#gruppo {
+  width: 35%;
+}
+
+#notebook img {
+  width: 130%;
+  border: 0px solid transparent;
+  border-radius: 80%;
+  margin: 0;
+}
+
+#testimonial {
+  margin-top: 60px;
+  background-color: #e22d0e;
+  height: 410px;
+  color: white;
+  text-align: center;
+  padding-top: 150px 0;
+}
+
+#testimonial h2 {
+  font-size: 2.5rem;
+}
+
+#testimonial blockquote {
+  margin-top: 75px;
+}
+
+#testimonial p {
+  font-style: italic;
+}
+
+#testimonial figcaption{
+  margin-top: 75px;
+  font-size: 1.5rem;
+}
+
+#testimonial cite {
+  font-size: initial;
+}
+
+#testimonial div {
+  padding: 5vh 0;
+}
+
+/*
+     _    ____ ___ ____  _____
+    / \  / ___|_ _|  _ \| ____|
+   / _ \ \___ \| || | | |  _|
+  / ___ \ ___) | || |_| | |___
+ /_/   \_\____/___|____/|_____|
+
+*/
+
+aside {
+  margin-top: 20px;
+}
+
+aside article div{
+  padding: 35px 15px 45px 15px;
+}
+
+aside article a {
+  color: initial;
+  font-weight: initial;
+  text-decoration: none;
+}
+
+aside article h3 {
+  display: inline;
+}
+
+
+/*
+  _____ ___   ___ _____ _____ ____
+ |  ___/ _ \ / _ \_   _| ____|  _ \
+ | |_ | | | | | | || | |  _| | |_) |
+ |  _|| |_| | |_| || | | |___|  _ <
+ |_|   \___/ \___/ |_| |_____|_| \_\
+
+*/
+
+footer{
+  margin-bottom: -10vh;
+  padding: 40px 0 40px 0;
+  background-color: #25a2c3;
+  height: 365px;
+}
+
+footer div {
+  display: block;
+  width: 42%;
+  margin: 0 auto;
+}
+
+footer ul li {
+  list-style: none;
+  font-size: 1.3rem;
+}
+
+footer ul li a{
+  font-weight: 300;
+  font-style: normal;
+}
+
+footer ul {
+  padding-bottom: 30px;
+  border-bottom: 1px solid white;
+}
+
+footer a, footer h2, footer p, footer address {
+  color: white;
+  text-align: center;
+}
+
+footer h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 35px;
+  margin-bottom: 45px;
+}
+
+#sign {
+  padding-top: 30px;
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+/*
+   ____ _        _    ____ ____ ___
+  / ___| |      / \  / ___/ ___|_ _|
+ | |   | |     / _ \ \___ \___ \| |
+ | |___| |___ / ___ \ ___) |__) | |
+  \____|_____/_/   \_\____/____/___|
+
+*/
+
+.button {
+	background-color: #f04c2f;
+	border-radius: 5px;
+	border: 0px solid #000000;
+	display: inline-block;
+	color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+	font-size: 17px;
+  font-weight: 600;
+	padding: 20px 45px;
+  text-transform: uppercase;
+	text-decoration: none;
+  transition: transform 0.5s;
+  margin-top: 15px;
+}
+
+.button:hover {
+  transform: scale(0.95);
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.align-center {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.articoli {
+  width: 80%;
+  margin: 100px auto;
+}
+
+.blocco {
+  margin: 0 20px 0 20px;
+  width: 100%;
+  border: 1px solid #b0afaf65;
+  border-radius: 6px;
+}
+
+.blocco img {
+  width: 100%;
+}
+
+.icon-list a{
+  text-decoration: none;
+}
+.icon-list p, address{
+  display: inline;
+}
+.icon-list p:hover, address:hover{
+  text-decoration: underline;
+}
+
+.icon::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+}
+
+.tel::before {
+  font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f879";
+}
+.tel:hover::before {
+  font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f2a0";
+}
+
+.mail::before {
+  font-family: "Font Awesome 5 Free"; font-weight: 400; content: "\f0e0";
+}
+.mail:hover::before {
+  font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f0e0";
+}
+
+.maps::before {
+  font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f3c5";
+}
+.maps:hover::before {
+  font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f041";
+}
