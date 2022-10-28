@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap');
 
 /*
    ____ _     ___  ____    _    _
@@ -12,10 +12,10 @@
 
 body {
   background-image: url("../img/sfondo.png");
-  line-height: 1.65rem;
   color: #393d41;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
+  line-height: 1.65rem;
 }
 
 b {
@@ -33,14 +33,15 @@ a {
 p{
   font-size: 1.2rem;
   margin: 1rem 0;
+
 }
 
 h1 {
   color: #25a2c3;
   font-weight: 600;
   font-family: 'Montserrat', sans-serif;
-  line-height: 2rem;
-  font-size: 2rem;
+  line-height: 1.5rem;
+  font-size: 3rem;
   margin: 0 0 0.5em 0;
 }
 h2 {
@@ -56,7 +57,16 @@ h3 {
   font-weight: 600;
   font-family: 'Montserrat', sans-serif;
   line-height: 2rem;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  margin: 0 0 0.5em 0;
+}
+
+h4 {
+  color: #25a2c3;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 2rem;
+  font-size: 1.3rem;
   margin: 0 0 0.5em 0;
 }
 
@@ -72,12 +82,12 @@ h3 {
 header {
   display: block;
   background-color: black;
-  padding: 30px 0;
+  padding: 42px 0;
 }
 
 header img{
   display: block;
-  width: 30%;
+  width: 40%;
   margin: 0 auto;
 }
 
@@ -92,35 +102,62 @@ header img{
 
 #hero {
   background-image: url(../images/banner.jpg);
-  min-height: 50vh;
+  height: 520px;
   background-position: center center;
   background-size: cover;
 }
 
-#hero div{
+#hero div {
   display: block;
-  width: 60%;
+  width: 85%;
   margin: 0 auto;
-  padding: 70px 0;
+  padding: 80px 0;
   text-align: center;
+}
+
+#hero h1 {
+  line-height: 3rem;
+}
+
+#hero p {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+#benefits {
+  margin-top: -90px;
+}
+
+#benefits div {
+  margin: 50px 0;
+}
+
+#benefits p {
+  line-height: 2.5rem;
+  font-size: 1.5rem;
 }
 
 #notebook img {
   width: 90%;
   border: 0px solid transparent;
   border-radius: 80%;
-  margin: 30px 0;
+  margin: -20px 0;
 }
 
 #testimonial {
+  margin-top: -60px;
   background-color: #e22d0e;
-  min-height: 30vh;
+  height: 410px;
   color: white;
   text-align: center;
 }
 
+#testimonial h2 {
+  font-size: 2.5rem;
+}
+
 #testimonial blockquote {
-  margin-top: 40px;
+  margin-top: 75px;
 }
 
 #testimonial p {
@@ -128,6 +165,7 @@ header img{
 }
 
 #testimonial figcaption{
+  margin-top: 75px;
   font-size: 1.5rem;
 }
 
@@ -139,7 +177,6 @@ header img{
   padding: 5vh 0;
 }
 
-
 /*
      _    ____ ___ ____  _____
     / \  / ___|_ _|  _ \| ____|
@@ -149,10 +186,12 @@ header img{
 
 */
 
+aside {
+  margin-top: 20px;
+}
 
 aside article div{
-  
-  padding: 20px 15px;
+  padding: 35px 15px 45px 15px;
 }
 
 aside article a {
@@ -177,8 +216,9 @@ aside article h3 {
 
 footer{
   margin-bottom: -10vh;
-  padding: 30px;
+  padding: 40px 0 40px 0;
   background-color: #25a2c3;
+  height: 365px;
 }
 
 footer div {
@@ -190,6 +230,12 @@ footer div {
 
 footer ul li {
   list-style: none;
+  font-size: 1.3rem;
+}
+
+footer ul li a{
+  font-weight: 300;
+  font-style: normal;
 }
 
 footer ul {
@@ -202,9 +248,16 @@ footer a, footer h2, footer p, footer address {
 }
 
 footer h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 35px;
+  margin-bottom: 45px;
+}
 
-  margin-bottom: 30px;
-
+#sign {
+  padding-top: 30px;
+  font-weight: 300;
+  font-style: normal;
 }
 
 
@@ -226,10 +279,11 @@ footer h2 {
   font-family: 'Montserrat', sans-serif;
 	font-size: 17px;
   font-weight: 600;
-	padding: 16px 40px;
+	padding: 20px 45px;
   text-transform: uppercase;
 	text-decoration: none;
   transition: transform 0.5s;
+  margin-top: 15px;
 }
 
 .button:hover {
@@ -243,11 +297,51 @@ footer h2 {
 
 .blocco {
   margin: 0 auto 40px auto;
-  width: 90%;
+  width: 100%;
   border: 1px solid #b0afaf65;
-  border-radius: 4px;
+  border-radius: 6px;
 }
 
 .blocco img {
   width: 100%;
+}
+
+.icon-list a{
+  text-decoration: none;
+}
+.icon-list p, address{
+  display: inline;
+}
+.icon-list p:hover, address:hover{
+  text-decoration: underline;
+}
+
+.icon::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+}
+
+.tel::before {
+  font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f879";
+}
+.tel:hover::before {
+  font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f2a0";
+}
+
+.mail::before {
+  font-family: "Font Awesome 5 Free"; font-weight: 400; content: "\f0e0";
+}
+.mail:hover::before {
+  font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f0e0";
+}
+
+.maps::before {
+  font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f3c5";
+}
+.maps:hover::before {
+  font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f041";
 }
