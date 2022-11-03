@@ -152,28 +152,28 @@ var eyeColor = {
   */
 function es5() {
   for (let i = 0; i < starWarsCharacters.length; i++) {
-    let elemento = starWarsCharacters[i]
+    let elemento = starWarsCharacters[i];
     switch (elemento.eye_color) {
       case "blue":
-        eyeColor.blue.push(elemento)
-        break
+        eyeColor.blue.push(elemento);
+        break;
       case "yellow":
-        eyeColor.yellow.push(elemento)
-        break
+        eyeColor.yellow.push(elemento);
+        break;
       case "brown":
-        eyeColor.brown.push(elemento)
-        break
+        eyeColor.brown.push(elemento);
+        break;
       case "red":
-        eyeColor.red.push(elemento)
-        break
+        eyeColor.red.push(elemento);
+        break;
       case "blue_gray":
-        eyeColor.blue_gray.push(elemento)
-        break
+        eyeColor.blue_gray.push(elemento);
+        break;
       default:
         break;
     }
   }
-console.log(eyeColor)
+  console.log(eyeColor);
 }
 
 /* ESERCIZIO 6
@@ -181,10 +181,10 @@ console.log(eyeColor)
   */
 var massCharacters = 0;
 function es6() {
-  let i = 0
-  while(i < starWarsCharacters.length){
+  let i = 0;
+  while (i < starWarsCharacters.length) {
     massCharacters += parseInt(starWarsCharacters[i].mass);
-    i++
+    i++;
   }
   console.log("La massa totale è di: " + massCharacters);
 }
