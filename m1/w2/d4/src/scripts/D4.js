@@ -181,8 +181,10 @@ console.log(eyeColor)
   */
 var massCharacters = 0;
 function es6() {
-  for (let i = 0; i < starWarsCharacters.length; i++) {
+  let i = 0
+  while(i < starWarsCharacters.length){
     massCharacters += parseInt(starWarsCharacters[i].mass);
+    i++
   }
   console.log("La massa totale è di: " + massCharacters);
 }
@@ -277,7 +279,7 @@ function random(min, max) {
 // ESEGUZIONE FUNZIONI
 // es2();
 // es3();
-es5();
+// es5();
 // es6();
 // es7();
 // es8();
