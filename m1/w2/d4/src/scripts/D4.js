@@ -185,18 +185,19 @@ function es7() {
   switch (true) {
     case massaTot < 500 :
       console.log("Ship is under loaded")
-    
+      break
     case massaTot == 500 :
       console.log("Ship is half loaded")
-      
+      break
     case massaTot > 700 && massaTot < 900 :
       console.log("Warning: Load is over 700")
-      
+      break
     case massaTot > 900 && massaTot < 1000:
       console.log("Critical Load: Over 900")
-      
+      break
     case massaTot >= 1000 :
-      console.log("DANGER! OVERLOAD ALERT: Jump ship now!") 
+      console.log("DANGER! OVERLOAD ALERT: Jump ship now!")
+      break
     }        
 }
             
