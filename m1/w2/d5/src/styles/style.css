@@ -1,135 +1,18 @@
-/* I Font Vanno Qui */
-
-/*
-   ____ _     ___  ____    _    _
-  / ___| |   / _ \| __ )  / \  | |
- | |  _| |  | | | |  _ \ / _ \ | |
- | |_| | |__| |_| | |_) / ___ \| |___
-  \____|_____\___/|____/_/   \_\_____|
-
-*/
-
 body {
-    width: 505px;
-    margin: 4% auto;
-    font-family: "Source Sans Pro", sans-serif;
-    letter-spacing: 5px;
-    font-size: 1.8rem;
-    background-image: url("https://images.pexels.com/photos/316466/pexels-photo-316466.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2", black);
-  }
-
-h1 {
-  display: block;
-  font-size: 2em;
-  margin-top: 0.67em;
-  margin-bottom: 0.67em;
-  margin-left: 0;
-  margin-right: 0;
-  font-weight: bold;
+  width: 555px;
+  margin: 4% auto;
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: 5px;
+  font-size: 1.8rem;
 }
 
-h2 {
-  display: block;
-  font-size: 1.5em;
-  margin-top: 0.83em;
-  margin-bottom: 0.83em;
-  margin-left: 0;
-  margin-right: 0;
-  font-weight: bold;
-}
-
-h3 {
-  display: block;
-  font-size: 1.17em;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  margin-left: 0;
-  margin-right: 0;
-  font-weight: bold;
-}
-
-h4 {
-  display: block;
-  margin-top: 1.33em;
-  margin-bottom: 1.33em;
-  margin-left: 0;
-  margin-right: 0;
-  font-weight: bold;
-}
-
-h5 {
-  display: block;
-  font-size: 0.83em;
-  margin-top: 1.67em;
-  margin-bottom: 1.67em;
-  margin-left: 0;
-  margin-right: 0;
-  font-weight: bold;
-}
-
-h6 {
-  display: block;
-  font-size: 0.67em;
-  margin-top: 2.33em;
-  margin-bottom: 2.33em;
-  margin-left: 0;
-  margin-right: 0;
-  font-weight: bold;
-}
-
-p {
-  display: block;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  margin-left: 0;
-  margin-right: 0;
-}
-
-ul {
-  display: block;
-  list-style-type: disc;
-  margin-top: 1em;
-  margin-bottom: 1 em;
-  margin-left: 0;
-  margin-right: 0;
-  padding-left: 40px;
-}
-
-ol {
-  display: block;
-  list-style-type: decimal;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  margin-left: 0;
-  margin-right: 0;
-  padding-left: 40px;
-}
-
-hr {
-  display: block;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  margin-left: auto;
-  margin-right: auto;
-  border-style: inset;
-  border-width: 1px;
-}
-
-blockquote {
-  display: block;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  margin-left: 40px;
-  margin-right: 40px;
-}
-
-.calcolatrice {
+.calculator {
   padding: 20px;
   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
   border-radius: 1px;
 }
 
-.input {
+.display {
   border: 1px solid #ddd;
   border-radius: 1px;
   height: 60px;
@@ -139,15 +22,15 @@ blockquote {
   margin-right: 6px;
   font-size: 2.5rem;
   overflow-x: auto;
-  transition: all 0.2s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 
-.input:hover {
+.display:hover {
   border: 1px solid #bbb;
   box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
 }
 
-.operators div,.operators2 div {
+.operators div {
   display: inline-block;
   border: 1px solid #bbb;
   border-radius: 1px;
@@ -157,17 +40,16 @@ blockquote {
   margin: 20px 4px 10px 0;
   cursor: pointer;
   background-color: #ddd;
-  transition: border-color 0.2s ease-in-out, background-color 0.2s,
-    box-shadow 0.2s;
+  transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
 }
 
-.operators div:hover,.operators2 div:hover {
+.operators div:hover {
   background-color: #ddd;
   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
   border-color: #aaa;
 }
 
-.operators div:active,.operators2 div:active {
+.operators div:active {
   font-weight: bold;
 }
 
@@ -185,8 +67,7 @@ blockquote {
   margin: 10px 4px 10px 0;
   cursor: pointer;
   background-color: #f9f9f9;
-  transition: border-color 0.2s ease-in-out, background-color 0.2s,
-    box-shadow 0.2s;
+  transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
 }
 
 .numbers div:hover {
@@ -201,23 +82,23 @@ blockquote {
 
 div.equal {
   display: inline-block;
-  border: 1px solid #3079ed;
+  border: 1px solid #3079ED;
   border-radius: 1px;
   width: 17%;
   text-align: center;
-  padding: 116px 10px;
+  padding: 122px 7px;
   margin: 10px 6px 10px 0;
   vertical-align: top;
   cursor: pointer;
-  color: #fff;
+  color: #FFF;
   background-color: #4d90fe;
-  transition: all 0.2s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 
 div.equal:hover {
-  background-color: #307cf9;
+  background-color: #307CF9;
   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
-  border-color: #1857bb;
+  border-color: #1857BB;
 }
 
 div.equal:active {
