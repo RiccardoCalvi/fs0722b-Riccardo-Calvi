@@ -1,7 +1,66 @@
-var display = document.getElementById("display")
+var display = document.getElementById("display");
 
 function aggiungiCifra(bottone) {
   display.value += bottone.getAttribute("data-simbolo");
+
+  let controllo = display.value.slice(-2);
+  switch (controllo) {
+    case "++":
+      cancella();
+      break;
+    case "--":
+      cancella();
+      break;
+    case "**":
+      cancella();
+      break;
+    case "//":
+      cancella();
+      break;
+
+    case "+-":
+      cancella();
+      break;
+    case "+*":
+      cancella();
+      break;
+    case "+/":
+      cancella();
+      break;
+
+    case "-+":
+      cancella();
+      break;
+    case "-*":
+      cancella();
+      break;
+    case "-/":
+      cancella();
+      break;
+
+    case "*+":
+      cancella();
+      break;
+    case "*-":
+      cancella();
+      break;
+    case "*/":
+      cancella();
+      break;
+
+    case "/+":
+      cancella();
+      break;
+    case "/-":
+      cancella();
+      break;
+    case "/*":
+      cancella();
+      break;
+
+    default:
+      break;
+  }
 }
 
 function tot() {

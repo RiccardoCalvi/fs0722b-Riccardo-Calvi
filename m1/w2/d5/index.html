@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calcolatrice</title>
+    <link rel="stylesheet" href="src/styles/reset.css" />
     <link rel="stylesheet" href="src/styles/style.css" />
   </head>
   <body>
@@ -15,13 +16,13 @@
           <button data-simbolo="7" onclick="aggiungiCifra(this)">7</button>
           <button data-simbolo="8" onclick="aggiungiCifra(this)">8</button>
           <button data-simbolo="9" onclick="aggiungiCifra(this)">9</button>
-          <button onclick="reset()">R</button>
+          <button onclick="reset()">Reset</button>
         </div>
         <div>
           <button data-simbolo="4" onclick="aggiungiCifra(this)">4</button>
           <button data-simbolo="5" onclick="aggiungiCifra(this)">5</button>
           <button data-simbolo="6" onclick="aggiungiCifra(this)">6</button>
-          <button onclick="cancella()">C</button>
+          <button onclick="cancella()">Del</button>
         </div>
         <div>
           <button data-simbolo="1" onclick="aggiungiCifra(this)">1</button>
@@ -36,7 +37,7 @@
       </div>
 
       <div class="operators">
-        <button class="operators" data-simbolo="+" onclick="aggiungiCifra(this)">+</button>
+        <button data-simbolo="+" onclick="aggiungiCifra(this)">+</button>
         <button data-simbolo="-" onclick="aggiungiCifra(this)">-</button>
         <button data-simbolo="*" onclick="aggiungiCifra(this)">x</button>
         <button data-simbolo="/" onclick="aggiungiCifra(this)">/</button>
