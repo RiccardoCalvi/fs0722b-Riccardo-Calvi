@@ -8,36 +8,39 @@
     <link rel="stylesheet" href="src/styles/style.css" />
   </head>
   <body>
-    <div id="calcolatrice">
-      
-      <input id="display" placeholder="0" type="text">
-      <div>
-        
-        <button data-simbolo="9" onclick="aggiungiCifra(this)">9</button>
-        <button data-simbolo="8" onclick="aggiungiCifra(this)">8</button>
-        <button data-simbolo="7" onclick="aggiungiCifra(this)">7</button>
+    <div id="calculator">
+      <input id="display" class="display" placeholder="0" type="text" />
+      <div class="numbers leftPanel">
+        <div>
+          <button data-simbolo="7" onclick="aggiungiCifra(this)">7</button>
+          <button data-simbolo="8" onclick="aggiungiCifra(this)">8</button>
+          <button data-simbolo="9" onclick="aggiungiCifra(this)">9</button>
+        </div>
+        <div>
+          <button data-simbolo="4" onclick="aggiungiCifra(this)">4</button>
+          <button data-simbolo="5" onclick="aggiungiCifra(this)">5</button>
+          <button data-simbolo="6" onclick="aggiungiCifra(this)">6</button>
+        </div>
+        <div>
+          <button data-simbolo="1" onclick="aggiungiCifra(this)">1</button>
+          <button data-simbolo="2" onclick="aggiungiCifra(this)">2</button>
+          <button data-simbolo="3" onclick="aggiungiCifra(this)">3</button>
+        </div>
+        <div>
+          <button data-simbolo="0" onclick="aggiungiCifra(this)">0</button>
+          <button data-simbolo="." onclick="aggiungiCifra(this)">,</button>
+          <button class="equal" onclick="tot()">=</button>
+        </div>
       </div>
-      <div>
-        <button data-simbolo="6" onclick="aggiungiCifra(this)">6</button>
-        <button data-simbolo="5" onclick="aggiungiCifra(this)">5</button>
-        <button data-simbolo="4" onclick="aggiungiCifra(this)">4</button>
 
-      </div>
-      <div>
-
-        <button data-simbolo="3" onclick="aggiungiCifra(this)">3</button>
-        <button data-simbolo="2" onclick="aggiungiCifra(this)">2</button>
-        <button data-simbolo="1" onclick="aggiungiCifra(this)">1</button>
-      </div>
-      <button data-simbolo="0" onclick="aggiungiCifra(this)">0</button>
-      <button onclick="tot()">=</button>
-      <div>
-        <button data-simbolo="+" onclick="aggiungiCifra(this)">+</button>
+      <div class="operators">
+        <button class="operators" data-simbolo="+" onclick="aggiungiCifra(this)">+</button>
         <button data-simbolo="-" onclick="aggiungiCifra(this)">-</button>
         <button data-simbolo="*" onclick="aggiungiCifra(this)">x</button>
         <button data-simbolo="/" onclick="aggiungiCifra(this)">/</button>
       </div>
-  </div>
+    </div>
+
     <script src="src/scripts/script.js"></script>
   </body>
 </html>

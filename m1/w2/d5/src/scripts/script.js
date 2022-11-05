@@ -5,6 +5,6 @@ function aggiungiCifra(bottone){
 }
 
 function tot(){
-  let numeri = document.getElementById("numeri");
+  let numeri = document.getElementById("display");
   numeri.value = eval(numeri.value);
 }
