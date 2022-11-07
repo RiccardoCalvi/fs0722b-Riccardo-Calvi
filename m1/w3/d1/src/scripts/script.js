@@ -27,11 +27,11 @@ function area(l1, l2) {
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 function crazySum(p1, p2) {
-  p1 = parseInt(p1);
-  p2 = parseInt(p2);
-  let out;
-
-  return p1 + p2;
+  let sum = parseInt(p1) + parseInt(p2);
+  if ((p1 = p2)) {
+    return sum * 3;
+  }
+  return sum;
 }
 
 // crazySum(10,55)
