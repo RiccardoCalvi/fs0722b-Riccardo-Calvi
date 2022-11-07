@@ -61,10 +61,10 @@ function crazyDiff(p1) {
 
 function boundary(n) {
   n = parseInt(n);
-  return (n>=20 && n<=100 || n == 400) ? true : false
+  return (n >= 20 && n <= 100) || n == 400 ? true : false;
 }
 
-console.log(boundary(19));
+// console.log(boundary(19));
 
 /* ESERCIZIO 5
  Scrivi una funzione di nome "epify" che accetta una stringa come parametro.

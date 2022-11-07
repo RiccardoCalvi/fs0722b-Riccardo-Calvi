@@ -1,8 +1,4 @@
 // Esercizi aggiuntivi (facoltativi) per D4
-import { giveMeRandom } from "main"
-
-console.log(giveMeRandom(10));
-
 
 /* EXTRA 1
  Scrivi una funzione chiamata "checkArray" che riceve un array di numeri casuali (creati con la funzione "giveMeRandom") e per ogni elemento stampa in console
@@ -13,19 +9,22 @@ console.log(giveMeRandom(10));
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 function checkArray() {
-  let arr = giveMeRandom[10], sum = 0;
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] > 5) {
-      console.log(arr[i] + " è maggiore di 5");
-      sum += arr[i];
+  let arr = giveMeRandom(10),
+    sum = 0;
+  console.log(arr);
+  for (const element of arr) {
+    if (element > 5) {
+      console.log(element + " è maggiore di 5");
+      sum += element;
     } else {
-      console.log(arr[i] + " NON è maggiore di 5");
+      console.log(element + " NON è maggiore di 5");
     }
   }
-  return sum
+
+  return sum;
 }
 
-console.log(checkArray())
+console.log("La somma di tutti i numeri maggiori di 5 è: " + checkArray());
 
 /* EXTRA 2
  Nel tuo eCommerce disponi di un'array di oggetti chiamato "shoppingCart". Ognuno di questi oggetti ha le seguenti proprietà: "price", "name", "id" e "quantity".
@@ -38,11 +37,9 @@ let shoppingCart = {
   price: "",
   name: "",
   id: "",
-  quantity: ""
-}
-function shoppingCartTotal() {
-  
-}
+  quantity: "",
+};
+function shoppingCartTotal() {}
 
 /* EXTRA 3
  Nel tuo eCommerce disponi di un'array di oggetti chiamato "shoppingCart". Ognuno di questi oggetti ha le seguenti proprietà: "price", "name", "id" e "quantity".
@@ -50,9 +47,7 @@ function shoppingCartTotal() {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-function addToShoppingCart() {
-  
-}
+function addToShoppingCart() {}
 
 /* EXTRA 4
  Nel tuo eCommerce disponi di un'array di oggetti chiamato "shoppingCart". Ognuno di questi oggetti ha le seguenti proprietà: "price", "name", "id" e "quantity".
