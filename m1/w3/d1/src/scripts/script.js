@@ -28,13 +28,13 @@ function area(l1, l2) {
 
 function crazySum(p1, p2) {
   let sum = parseInt(p1) + parseInt(p2);
-  if ((p1 = p2)) {
+  if (p1 === p2) {
     return sum * 3;
   }
   return sum;
 }
 
-// crazySum(10,55)
+// console.log(crazySum(10,10))
 
 /* ESERCIZIO 3
  Scrivi una funzione di nome "crazyDiff" che calcola la differenza assoluta tra un numero fornito come parametro e 19.
@@ -115,7 +115,7 @@ function epify(stringa) {
 function reverseString(str) {
   return str.split("").reverse().join("");
 }
-console.log(reverseString("roma"));
+// console.log(reverseString("roma"));
 
 /* ESERCIZIO 8
  Scrivi una funzione di nome "upperFirst", che riceve come parametro una stringa formata da diverse parole.
@@ -140,6 +140,11 @@ function upperFirst(str) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+function cutString(str2) {
+  return str2.slice(1,-1); 
+}
+
+// console.log(cutString("Ciao come stai"))
 
 /* ESERCIZIO 10
  Scrivi una funzione di nome "giveMeRandom", che accetta come parametro un numero n e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.
@@ -147,7 +152,7 @@ function upperFirst(str) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-export function giveMeRandom(n) {
+function giveMeRandom(n) {
   let out = [];
   for (let i = 0; i < n; i++) {
     out.push(between(0, 10));
@@ -157,6 +162,6 @@ export function giveMeRandom(n) {
 
 // console.log(giveMeRandom(10));
 
-export function between(min, max) {
+function between(min, max) {
   return Math.floor(Math.random() * (max - min) + min);
 }
