@@ -64,8 +64,7 @@ function aggiungiCifra(bottone) {
 }
 
 function tot() {
-  let numeri = display;
-  numeri.value = eval(numeri.value);
+  display.value = eval(display.value);
 }
 
 function cancella() {
