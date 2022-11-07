@@ -47,10 +47,10 @@ function crazyDiff(p1) {
   if (out > 19) {
     out *= 3;
   }
-  return out;
+  return Math.abs(out);
 }
 
-// console.log(crazyDiff(100))
+// console.log(crazyDiff(3));
 
 /* ESERCIZIO 4
  Scrivi una funzione di nome "boundary" che accetta un numero intero n come parametro, e ritorna true se n è compreso tra 20 e 100 (incluso) oppure
@@ -61,21 +61,10 @@ function crazyDiff(p1) {
 
 function boundary(n) {
   n = parseInt(n);
-  console.log(n);
-  switch (n) {
-    case n > 20 && n < 100:
-      return true;
-      break;
-    case n == 400:
-      return true;
-      break;
-    default:
-      return false;
-      break;
-  }
+  return (n>=20 && n<=100 || n == 400) ? true : false
 }
 
-// console.log(boundary(40));
+console.log(boundary(19));
 
 /* ESERCIZIO 5
  Scrivi una funzione di nome "epify" che accetta una stringa come parametro.
@@ -102,9 +91,11 @@ function epify(stringa) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-// function check3and7(n) {
+function check3and7(n) {
+  return n % 3 || n % 7 ? true : false;
+}
 
-// }
+// console.log(check3and7(0));
 
 /* ESERCIZIO 7
  Scrivi una funzione di nome "reverseString", il cui scopo è invertire una stringa fornita come parametro (es. "EPICODE" --> "EDOCIPE")
@@ -141,7 +132,7 @@ function upperFirst(str) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 function cutString(str2) {
-  return str2.slice(1,-1); 
+  return str2.slice(1, -1);
 }
 
 // console.log(cutString("Ciao come stai"))
