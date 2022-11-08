@@ -36,28 +36,76 @@ function es3() {
   }
   return out;
 }
-console.log(es3());
+// console.log(es3());
 
 /* ESERCIZIO 4
   Scrivi una funzione per creare un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 100 (incluso).
  */
 
+function es4() {
+  let out = [];
+  for (let i = 0; i < 10; i++) {
+    out.push(random(0, 100));
+  }
+  return out;
+}
+
+// console.log(es4());
+
 /* ESERCIZIO 5
   Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici.
  */
+
+function es5(arr = []) {
+  let out = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 === 0) {
+      out.push(arr[i]);
+    }
+  }
+  return out;
+}
+// console.log(es5(es4()))
 
 /* ESERCIZIO 6
   Scrivi una funzione per sommare a catena i numeri contenuti in un array.
  */
 
+function es6(arr = []) {
+  let out = 0;
+  for (let i = 0; i < arr.length; i++) {
+    out = out + arr[i];
+  }
+  return out;
+}
+// console.log(es6(es4()))
+
 /* ESERCIZIO 7
   Scrivi una funzione per incrementare di 1 tutti i valori numerici in un array.
 */
+
+function es7(arr = []) {
+  console.log(arr);
+  for (let i = 0; i < arr.length; i++) {
+    arr[i] += 1;
+  }
+  return arr;
+}
+// console.log(es7(es4()))
 
 /* ESERCIZIO 8
   Sostituisci ogni stringa contenuta in un array con un numero rappresentante la sua lunghezza.
   es.: ["EPICODE", "is", "great"] => [7, 2, 5]
 */
+function es8(arr = []) {
+  out = [];
+  for (let i = 0; i < arr.length; i++) {
+    out.push(arr[i].length);
+  }
+  return out;
+}
+
+// console.log(es8(["epicode", "is", "great"]))
 
 /* ESERCIZIO 9 (EXTRA)
   Scrivi una funzione per eliminare solo i valori PARI da un array.
@@ -215,3 +263,7 @@ const movies = [
 /* ESERCIZIO 18 (EXTRA)
   Scrivi una funzione per recuperare tutti i film dall'array fornito che contengono una parola fornita.
 */
+
+function random(min, max) {
+  return Math.floor(Math.random() * (max - min) + min);
+}
