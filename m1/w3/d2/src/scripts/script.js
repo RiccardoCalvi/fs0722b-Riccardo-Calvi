@@ -4,10 +4,10 @@
 */
 
 function es1(str1 = "bella", str2 = "prova") {
-  return str1.slice(0, 2) + str2.slice(str2.length - 3, str2.length);
+  return str1.slice(0, 2).toUpperCase() + str2.slice(str2.length - 3, str2.length).toUpperCase();
 }
 
-// console.log(es1("ciao", "marco"));
+console.log(es1("ciao", "marco"));
 
 /* ESERCIZIO 2
   Scrivi una funzione per creare un array di soli valori DISPARI da 1 a 100.
