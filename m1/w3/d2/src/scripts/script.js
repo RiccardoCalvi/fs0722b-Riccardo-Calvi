@@ -27,6 +27,17 @@ function es2() {
   Scrivi una funzione per creare un array di soli valori multipli di 5, da 1 a 100.
  */
 
+function es3() {
+  let out = [];
+  for (let i = 0; i < 100; i++) {
+    if (i % 5 === 0) {
+      out.push(i);
+    }
+  }
+  return out;
+}
+console.log(es3());
+
 /* ESERCIZIO 4
   Scrivi una funzione per creare un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 100 (incluso).
  */
