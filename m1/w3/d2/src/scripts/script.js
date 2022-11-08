@@ -4,10 +4,13 @@
 */
 
 function es1(str1 = "bella", str2 = "prova") {
-  return str1.slice(0, 2).toUpperCase() + str2.slice(str2.length - 3, str2.length).toUpperCase();
+  return (
+    str1.slice(0, 2).toUpperCase() +
+    str2.slice(str2.length - 3, str2.length).toUpperCase()
+  );
 }
 
-console.log(es1("ciao", "marco"));
+// console.log(es1("ciao", "marco"));
 
 /* ESERCIZIO 2
   Scrivi una funzione per creare un array di soli valori DISPARI da 1 a 100.
@@ -122,22 +125,40 @@ function es9(arr = []) {
 }
 // console.log(es9(es4()));
 
+
+
+
+
+
+
+
+
+
+
+
 /* ESERCIZIO 10 (EXTRA)
   Scrivi una funzione per creare un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 10 (incluso), SENZA AMMETTERE DUPLICATI.
  */
 
-// function es10(arr = []) {
-//   arr = arr.slice().sort();
-//   let out = [];
-//   for (let i = 0; i < arr.length - 1; i++) {
-//     if (arr[i + 1] == arr[i]) {
-//       out.push(arr[i]);
-//     }
-//   }
-//   return out;
-// }
+const createRandomWithoutDuplicate = function () {
+  //Dichiarazione funzione
 
-// console.log(es10(es4()));
+  let array = []; //Dichiarato array vuoto
+  for (let i = 0; i < 10; i++) { // Cliclo FOR per scorrere elemento per elemento (10)
+  
+    let added = false                                     //per rimanare nel ciclo WHILE nel caso l'IF viene verificato
+    while (!added) {                                      // condizione per il while che fa ripetere il ciclo finche non viene inserito un elemento
+      let numberToAdd = Math.ceil(Math.random() * 10)     //in questo passaggio viene inserita una variabile random tra 1 e 100
+      if (!array.includes(numberToAdd)) {                 // va a controllare se nell'array non è presente il numero appena inserito nella variabile "numberToAdd"
+        array.push(numberToAdd)                           // se non è presente va ad eseguire un .push() del numero generato
+        added = true                                      // in questo modo esce dal ciclo quando un elemento viene aggiunto all'array e ripete il ciclo for
+      }
+    }
+  }
+  return array
+}
+
+console.log(createRandomWithoutDuplicate())
 
 /* ESERCIZIO 11 (EXTRA)
   Scrivi un algoritmo in grado di invertire un array.
