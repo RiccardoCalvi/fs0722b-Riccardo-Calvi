@@ -287,7 +287,7 @@ function es12() {
 */
 
 function es13() {
-  return out = movies.length
+  return (out = movies.length);
 }
 
 // console.log(es13())
@@ -296,21 +296,73 @@ function es13() {
   Scrivi una funzione per creare un array con solamente i titoli dei film contenuti nell'array fornito.
 */
 
+function es14() {
+  let out = [];
+  for (let i = 0; i < movies.length; i++) {
+    const film = movies[i].Title;
+    out.push(film);
+  }
+  return out;
+}
+
+// console.log(es14())
+
 /* ESERCIZIO 15
   Scrivi una funzione per ottenere dall'array fornito solamente i film usciti nel millennio corrente.
 */
+
+function es15() {
+  let out = [];
+  for (let i = 0; i < movies.length; i++) {
+    const film = movies[i];
+    if (film.Year >= 2000) {
+      out.push(film);
+    }
+  }
+  return out;
+}
+
+// console.log(es15());
 
 /* ESERCIZIO 16
   Scrivi una funzione per ottenere dall'array fornito uno specifico film (la funzione riceve un imdbID come parametro).
 */
 
+function es16(id = "") {
+  let out;
+  for (let i = 0; i < movies.length; i++) {
+    const film = movies[i];
+    if (film.imdbID == id) {
+      return film;
+    }
+  }
+}
+
+// console.log(es16("tt0167261"))
+
 /* ESERCIZIO 17
   Scrivi una funzione per calcolare la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array fornito.
 */
 
+// function es17(params) {
+
+// }
+
 /* ESERCIZIO 18 (EXTRA)
   Scrivi una funzione per recuperare tutti i film dall'array fornito che contengono una parola fornita.
 */
+function es18(key = "") {
+  let out = [];
+  for (let i = 0; i < movies.length; i++) {
+    const film = movies[i].Title;
+    if (film.includes(key)) {
+      out.push(film);
+    }
+  }
+  return out;
+}
+
+// console.log(es18("Avengers"))
 
 function random(min, max) {
   return Math.floor(Math.random() * (max - min) + min);
