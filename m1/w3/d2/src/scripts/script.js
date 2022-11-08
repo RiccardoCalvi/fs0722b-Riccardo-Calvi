@@ -111,14 +111,45 @@ function es8(arr = []) {
   Scrivi una funzione per eliminare solo i valori PARI da un array.
 */
 
+function es9(arr = []) {
+  let out = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 !== 0) {
+      out.push(arr[i]);
+    }
+  }
+  return out;
+}
+// console.log(es9(es4()));
+
 /* ESERCIZIO 10 (EXTRA)
   Scrivi una funzione per creare un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 10 (incluso), SENZA AMMETTERE DUPLICATI.
  */
+
+// function es10(arr = []) {
+//   arr = arr.slice().sort();
+//   let out = [];
+//   for (let i = 0; i < arr.length - 1; i++) {
+//     if (arr[i + 1] == arr[i]) {
+//       out.push(arr[i]);
+//     }
+//   }
+//   return out;
+// }
+
+// console.log(es10(es4()));
 
 /* ESERCIZIO 11 (EXTRA)
   Scrivi un algoritmo in grado di invertire un array.
   es: [1, 3, 5] ==> [5, 3, 1]
 */
+
+function es11(arr = []) {
+  console.log("Prima: " + arr);
+  return arr.reverse();
+}
+
+// console.log("Dopo: " + es11(es4()))
 
 /* Questo array di film verrà usato negli esercizi a seguire. Non modificarlo e scorri oltre per riprendere gli esercizi :) */
 const movies = [
@@ -240,9 +271,26 @@ const movies = [
   Scrivi una funzione per trovare il film più vecchio nell'array fornito.
 */
 
+function es12() {
+  let out = 9999;
+  for (let i = 0; i < movies.length; i++) {
+    let film = parseInt(movies[i].Year);
+    out = film < out ? (out = film) : out;
+  }
+  return out;
+}
+
+// console.log("Il film più vecchio è del: " + es12());
+
 /* ESERCIZIO 13
   Scrivi una funzione per ottenere il numero di film contenuti nell'array fornito.
 */
+
+function es13() {
+  return out = movies.length
+}
+
+// console.log(es13())
 
 /* ESERCIZIO 14
   Scrivi una funzione per creare un array con solamente i titoli dei film contenuti nell'array fornito.
