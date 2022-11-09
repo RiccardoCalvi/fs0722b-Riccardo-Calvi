@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles/reset.css" />
+    <link rel="stylesheet" href="src/styles/font-awesome.css" />
+    <link rel="stylesheet" href="src/styles/style.css" />
+    <title>TITOLO</title>
+  </head>
+  <body onload="myFunction()" style="margin: 0">
+    <div id="loader"></div>
+    <div class="animate-bottom" id="toDo" style="display: none;">
+      <div id="myDIV" class="header">
+        <h2>To Do List</h2>
+        <input
+          type="text"
+          id="myInput"
+          placeholder="Inserisci i tuoi task..."
+        />
+        <span onclick="newElement()" class="addBtn">Aggiungi</span>
+      </div>
+
+      <ul id="myUL"></ul>
+    </div>
+
+    <script src="src/scripts/script.js"></script>
+  </body>
+</html>
