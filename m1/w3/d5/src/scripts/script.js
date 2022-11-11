@@ -351,12 +351,12 @@ function isTodayMyBirthday() {
   deve ritornare l'oggetto fornito dopo aver eliminato
   in esso la proprietà chiamata come la stringa passata come secondo parametro.
 */
-let topolino = {
+let topolino = {                                  // Creo l'oggetto topolino
   nome: "mickey",
   cognome: "mouse",
 };
-function deleteProp(ogg = {}, daEliminare) {
-  delete ogg[daEliminare];
+function deleteProp(ogg = {}, daEliminare) {     
+  delete ogg[daEliminare];                        // Elimino la proprietà (tramite delete) indicata nel console.log come secondo paramentro
   return ogg;
 }
 
@@ -367,10 +367,10 @@ function deleteProp(ogg = {}, daEliminare) {
 */
 
 function newestMovie() {
-  let out = movies[0];
-  for (const film of movies) {
-    if (film.Year > out.Year) {
-      out = film;
+  let out = movies[0];              //definisco out come il primo film dell'array di oggetti
+  for (const film of movies) {      // avvio un ciclo for su tutto l'arrat
+    if (film.Year > out.Year) {     // controllo se l'anno di uscita del film preso dal ciclo è maggiore dell'anno della variabile out
+      out = film;                   // se si verifica la condizione sostituisco il film
     }
   }
   return out;
