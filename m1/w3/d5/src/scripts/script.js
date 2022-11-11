@@ -154,7 +154,7 @@ function onlyLetters(str) {
 
 function isThisAnEmail(str = "") {
   return str.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/) // Controlla se nella stringa sia valida (tramite funzione Match) la regex (presa da Stack Overflow) sia valida
-    ? true  // se è valida ritorna TRUE
+    ? true // se è valida ritorna TRUE
     : false; // se NON è valida ritorna FALSE
 }
 
@@ -165,7 +165,7 @@ function isThisAnEmail(str = "") {
 */
 
 function whatDayIsIt() {
-  return new Date().getDay() // istanzio tramite costruttore una nuova data alla quale chiedo tramite la funzione .getDay() il numero del giorno della settimana
+  return new Date().getDay(); // istanzio tramite costruttore una nuova data alla quale chiedo tramite la funzione .getDay() il numero del giorno della settimana
 }
 
 // console.log(whatDayIsIt());
@@ -183,9 +183,28 @@ function whatDayIsIt() {
   }
 */
 
+function rollTheDices(num = 0) {
+  let out = {                     // Istanzio un oggetto chiamato OUT
+    values: [],
+    sum: 0,
+  };
+
+  for (let i = 0; i < num; i++) { // Avvio un cliclo For che ciclerà num volte  (num è il paramentro passato)
+    let n = dice();               // ottengo il valore numerico dalla funzione dice() e lo salvo nella variabile locale n
+    out.values.push(n);           // effettuo un .push() di n sull'array values dell'oggetto
+    out.sum += n;                 // sommo il valore n con i precedenti/successivi e lo salvo in sum dell'oggetto
+  }
+
+  return out;
+}
+
+console.log(rollTheDices(6));
+
 /* ESERCIZIO 9
   Scrivi una funzione chiamata "howManyDays" che riceve una data come parametro e ritorna il numero di giorni trascorsi da tale data.
 */
+
+
 
 /* ESERCIZIO 10
   Scrivi una funzione chiamata "isTodayMyBirthday" che deve ritornare true se oggi è il tuo compleanno, falso negli altri casi.
