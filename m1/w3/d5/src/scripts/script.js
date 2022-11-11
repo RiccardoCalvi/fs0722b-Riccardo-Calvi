@@ -565,6 +565,17 @@ function es25() {
   Scrivi una funzione per aggiungere ad ogni tag <tr> la classe CSS "test"
 */
 
+function es26() {
+  const tr = document.querySelectorAll('tr'); // Dichiaro tr con tutti i tag tr
+
+  for (const row of tr) {                     // Avvio un cliclo for per aggiungere la classe test
+    row.classList.add('test');
+  }
+  
+}
+
+// es26();
+
 // [EXTRA] JS Avanzato
 
 /* ESERCIZIO 27
