@@ -480,10 +480,16 @@ function searchAndDivide(titolo = "") {
 
 // console.log(searchAndDivide("Avengers"))
 
-
 /* ESERCIZIO 19
   Scrivi una funzione chiamata "removeIndex" che riceve un numero come parametro e ritorna l'array "movies" fornito privo dell'elemento nella posizione ricevuta come parametro.
 */
+
+function removeIndex(index = 0) {
+  movies.splice(index, 1); // Rimuovo l'elemento indicato tramite il parametro index grazie alla funzione .splice, al primo paramentro indico l'index e al secondo quanti elementi rimuovere
+  return movies;
+}
+
+// console.log(removeIndex(2))
 
 // DOM (nota: gli elementi che selezionerai non si trovano realmente nella pagina)
 
