@@ -410,13 +410,15 @@ function onlyTheYears() {
   Scrivi una funzione chiamata "onlyInLastMillennium" che ritorna solamente i film prodotto nel millennio scorso contenuti nell'array "movies" fornito.
 */
 function onlyInLastMillennium() {
-  out = []
-  for (const film of movies) {   // Avvio un cliclo for su tutti i film
-    if (film.Year < 2000) {      // Controllo se l'anno di produzione del film sia inferiore al 2000
-      out.push(film)             // Se si verifica la condizione effettuo un .push del film
+  out = [];
+  for (const film of movies) {
+    // Avvio un cliclo for su tutti i film
+    if (film.Year < 2000) {
+      // Controllo se l'anno di produzione del film sia inferiore al 2000
+      out.push(film); // Se si verifica la condizione effettuo un .push del film
     }
   }
-  return out
+  return out;
 }
 
 // console.log(onlyInLastMillennium())
@@ -425,9 +427,34 @@ function onlyInLastMillennium() {
   Scrivi una funzione chiamata "sumAllTheYears" che ritorna la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array "movies" fornito.
 */
 
+function sumAllTheYears() {
+  out = 0;
+  for (const film of movies) {
+    // Avvio un cliclo for su tutti i film
+    out += parseInt(film.Year); // Converto le date in numeri interi e li sommo
+  }
+  return out;
+}
+
+// console.log(sumAllTheYears())
+
 /* ESERCIZIO 17
   Scrivi una funzione chiamata "searchByTitle" che riceve una stringa come parametro e ritorna i film nell'array "movies" fornito che la contengono nel titolo.
 */
+
+function searchByTitle(titolo = "") {
+  let out = [];
+  for (const film of movies) {
+    // Avvio un cliclo for su tutti i film
+    if (film.Title.toLowerCase().match(titolo.toLowerCase())) {
+      // Trasformo il titolo del film e la stringa passata in caratteri minuscoli, tramite la funzione .match sul titolo del film, preso dal ciclo, controllo se il parametro è contenuto nel titolo
+      out.push(film); // se la condizione si verifica effettuo un .push del film
+    }
+  }
+  return out;
+}
+
+// console.log(searchByTitle("Avengers"))
 
 /* ESERCIZIO 18
   Scrivi una funzione chiamata "searchAndDivide" che riceve una stringa come parametro e ritorna un oggetto contenente due array: "match" e "unmatch".
