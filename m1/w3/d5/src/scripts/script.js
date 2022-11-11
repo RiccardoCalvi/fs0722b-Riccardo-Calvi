@@ -224,16 +224,27 @@ function isTodayMyBirthday() {
     : false;
 }
 
-console.log(isTodayMyBirthday());
+// console.log(isTodayMyBirthday());
 
 // Arrays & Oggetti
 
 // NOTA: l'array "movies" usato in alcuni esercizi è definito alla fine di questo file
 
 /* ESERCIZIO 11
-  Scrivi una funzione chiamata "deleteProp" che riceve un oggetto e una stringa come parametri; deve ritornare l'oggetto fornito dopo aver eliminato
+  Scrivi una funzione chiamata "deleteProp" che riceve un oggetto e una stringa come parametri;
+  deve ritornare l'oggetto fornito dopo aver eliminato
   in esso la proprietà chiamata come la stringa passata come secondo parametro.
 */
+let topolino = {
+  nome: "mickey",
+  cognome: "mouse",
+};
+function deleteProp(ogg = {}, daEliminare) {
+  delete ogg[daEliminare];
+  return ogg;
+}
+
+console.log(deleteProp(topolino, "cognome"));
 
 /* ESERCIZIO 12
   Scrivi una funzione chiamata "newestMovie" che trova il film più recente nell'array "movies" fornito.
