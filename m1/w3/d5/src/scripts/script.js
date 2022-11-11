@@ -184,15 +184,17 @@ function whatDayIsIt() {
 */
 
 function rollTheDices(num = 0) {
-  let out = {                     // Istanzio un oggetto chiamato OUT
+  let out = {
+    // Istanzio un oggetto chiamato OUT
     values: [],
     sum: 0,
   };
 
-  for (let i = 0; i < num; i++) { // Avvio un cliclo For che ciclerà num volte  (num è il paramentro passato)
-    let n = dice();               // ottengo il valore numerico dalla funzione dice() e lo salvo nella variabile locale n
-    out.values.push(n);           // effettuo un .push() di n sull'array values dell'oggetto
-    out.sum += n;                 // sommo il valore n con i precedenti/successivi e lo salvo in sum dell'oggetto
+  for (let i = 0; i < num; i++) {
+    // Avvio un cliclo For che ciclerà num volte  (num è il paramentro passato)
+    let n = dice(); // ottengo il valore numerico dalla funzione dice() e lo salvo nella variabile locale n
+    out.values.push(n); // effettuo un .push() di n sull'array values dell'oggetto
+    out.sum += n; // sommo il valore n con i precedenti/successivi e lo salvo in sum dell'oggetto
   }
 
   return out;
@@ -205,9 +207,9 @@ function rollTheDices(num = 0) {
 */
 
 function howManyDays(data) {
-  let data1 = new Date();                                       // Ottengo la data odierna
-  var data2 = new Date(data);                                   // Ottengo la data passando come parametro la data impostata nel console.log
-  return parseInt((data1 - data2) / (1000 * 60 * 60 * 24), 10); // Trasformo le data in numeri interi e li divido per l'espressione 
+  let data1 = new Date(); // Ottengo la data odierna
+  var data2 = new Date(data); // Ottengo la data passando come parametro la data impostata nel console.log
+  return parseInt((data1 - data2) / (1000 * 60 * 60 * 24), 10); // Trasformo le data in numeri interi e li divido per l'espressione
 }
 
 // console.log("Sono passati " + howManyDays("2001-04-12") + " Giorni")
@@ -215,6 +217,14 @@ function howManyDays(data) {
 /* ESERCIZIO 10
   Scrivi una funzione chiamata "isTodayMyBirthday" che deve ritornare true se oggi è il tuo compleanno, falso negli altri casi.
 */
+
+function isTodayMyBirthday() {
+  return `${new Date().getDate()} ${new Date().getMonth()}` == "12 03" // Ottengo il giorno e il mese corrente e lo incapsulo dentro una stringa che poi viene messa a confronto con la mia data di nascita ovvero il 12 aprile e se è valida ritorna true alternativamente false
+    ? true
+    : false;
+}
+
+console.log(isTodayMyBirthday());
 
 // Arrays & Oggetti
 
