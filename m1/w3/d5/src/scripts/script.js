@@ -497,25 +497,69 @@ function removeIndex(index = 0) {
   Scrivi una funzione per selezionare l'elemento dotato di id "container" all'interno della pagina.
 */
 
+function es20(id = "") {
+  document.getElementById(id); // seleziono tutti gli elementi tramite l'ID dato dal paramento
+}
+
+// es20("container")
+
 /* ESERCIZIO 21
   Scrivi una funzione per selezionare ogni tag <td> all'interno della pagina.
 */
+function es21() {
+  let td = document.querySelectorAll("td"); // dichiaro td con tutti gli elementi TD
+  for (const t of td) {                     // Avvio un ciclo per stampare tutti i TD
+    console.log(t);
+  }
+}
+
+// console.log(es21());
 
 /* ESERCIZIO 22
   Scrivi una funzione che, tramite un ciclo, stampa in console il testo contenuto in ogni tag <td> all'interno della pagina.
 */
+function es22() {
+  let td = document.querySelectorAll("td"); // dichiaro td con tutti gli elementi TD
+  for (const t of td) {                     // Avvio un ciclo per stampare tutti i testi dei TD
+    console.log(t.innerHTML);
+  }
+}
+
+// console.log(es22());
 
 /* ESERCIZIO 23
   Scrivi una funzione per aggiungere un background di colore rosso a ogni link all'interno della pagina.
 */
 
+function es23() {
+  let a = document.querySelectorAll("a");   // dichiaro a con tutti i tag a
+  for (const link of a) {                   // Avvio un ciclo per impostare il colore di background a rosso
+    link.style.background = "red";
+  }
+}
+// es23();
+
 /* ESERCIZIO 24
   Scrivi una funzione per aggiungere un nuovo elemento alla lista non ordinata con id "myList".
 */
+function es24() {
+  let li = document.createElement("li"); // Dichiaro li 
+  li.appendChild(document.createTextNode("5")); // Aggiungo il testo al li appena creato
+  document.getElementById("myList").appendChild(li);   // aggiungo il li appena creato alla lista ul
+}
+// es24()
 
 /* ESERCIZIO 25
   Scrivi una funzione per svuotare la lista non ordinata con id "myList".
 */
+
+function es25() {
+  let lista = document.getElementById("myList"); // Dichiaro Lista con il selettore ad ID
+  while (lista.firstChild) {
+    lista.removeChild(lista.firstChild);        // Avvio un ciclo While finche è presente il primo figlio... rimuovi il primo figlio :)
+  }
+}
+// es25();
 
 /* ESERCIZIO 26
   Scrivi una funzione per aggiungere ad ogni tag <tr> la classe CSS "test"
