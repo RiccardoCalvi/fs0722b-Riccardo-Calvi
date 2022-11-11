@@ -324,7 +324,7 @@ function rollTheDices(num = 0) {
 
 function howManyDays(data) {
   let data1 = new Date(); // Ottengo la data odierna
-  var data2 = new Date(data); // Ottengo la data passando come parametro la data impostata nel console.log
+  let data2 = new Date(data); // Ottengo la data passando come parametro la data impostata nel console.log
   return parseInt((data1 - data2) / (1000 * 60 * 60 * 24), 10); // Trasformo le data in numeri interi e li divido per l'espressione
 }
 
