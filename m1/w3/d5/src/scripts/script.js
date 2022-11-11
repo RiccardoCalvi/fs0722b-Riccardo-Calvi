@@ -508,7 +508,8 @@ function es20(id = "") {
 */
 function es21() {
   let td = document.querySelectorAll("td"); // dichiaro td con tutti gli elementi TD
-  for (const t of td) {                     // Avvio un ciclo per stampare tutti i TD
+  for (const t of td) {
+    // Avvio un ciclo per stampare tutti i TD
     console.log(t);
   }
 }
@@ -520,7 +521,8 @@ function es21() {
 */
 function es22() {
   let td = document.querySelectorAll("td"); // dichiaro td con tutti gli elementi TD
-  for (const t of td) {                     // Avvio un ciclo per stampare tutti i testi dei TD
+  for (const t of td) {
+    // Avvio un ciclo per stampare tutti i testi dei TD
     console.log(t.innerHTML);
   }
 }
@@ -532,8 +534,9 @@ function es22() {
 */
 
 function es23() {
-  let a = document.querySelectorAll("a");   // dichiaro a con tutti i tag a
-  for (const link of a) {                   // Avvio un ciclo per impostare il colore di background a rosso
+  let a = document.querySelectorAll("a"); // dichiaro a con tutti i tag a
+  for (const link of a) {
+    // Avvio un ciclo per impostare il colore di background a rosso
     link.style.background = "red";
   }
 }
@@ -543,9 +546,9 @@ function es23() {
   Scrivi una funzione per aggiungere un nuovo elemento alla lista non ordinata con id "myList".
 */
 function es24() {
-  let li = document.createElement("li"); // Dichiaro li 
+  let li = document.createElement("li"); // Dichiaro li
   li.appendChild(document.createTextNode("5")); // Aggiungo il testo al li appena creato
-  document.getElementById("myList").appendChild(li);   // aggiungo il li appena creato alla lista ul
+  document.getElementById("myList").appendChild(li); // aggiungo il li appena creato alla lista ul
 }
 // es24()
 
@@ -556,7 +559,7 @@ function es24() {
 function es25() {
   let lista = document.getElementById("myList"); // Dichiaro Lista con il selettore ad ID
   while (lista.firstChild) {
-    lista.removeChild(lista.firstChild);        // Avvio un ciclo While finche è presente il primo figlio... rimuovi il primo figlio :)
+    lista.removeChild(lista.firstChild); // Avvio un ciclo While finche è presente il primo figlio... rimuovi il primo figlio :)
   }
 }
 // es25();
@@ -566,12 +569,12 @@ function es25() {
 */
 
 function es26() {
-  const tr = document.querySelectorAll('tr'); // Dichiaro tr con tutti i tag tr
+  const tr = document.querySelectorAll("tr"); // Dichiaro tr con tutti i tag tr
 
-  for (const row of tr) {                     // Avvio un cliclo for per aggiungere la classe test
-    row.classList.add('test');
+  for (const row of tr) {
+    // Avvio un cliclo for per aggiungere la classe test
+    row.classList.add("test");
   }
-  
 }
 
 // es26();
@@ -590,6 +593,17 @@ function es26() {
 
 */
 
+// function halfTree(h = 1) {
+
+//   for (let i = 0; i < h; i++) {
+//     console.log("*")
+
+//   }
+
+// }
+
+// halfTree(5)
+
 /* ESERCIZIO 28
   Crea una funzione chiamata "tree" che riceve un numero come parametro e costruisce un albero di "*" (asterischi) dell'altezza fornita.
 
@@ -606,7 +620,26 @@ function es26() {
   Crea una funzione chiamata "isItPrime" che riceve un numero come parametro e ritorna true se il numero fornito è un numero primo.
 */
 
-/* Questo array viene usato per gli esercizi. Non modificarlo. */
+function es29(n) {
+  let primo = true;
+  if (n === 1) {
+    // controlla se il numero è uguale a 1
+    console.log("Il numero è 1");
+  } else if (n > 1) {
+    // Controlla se il numero è maggiore
+
+    for (let i = 2; i < n; i++) {
+      // Avvio il ciclo partendo da 2
+      if (n % i == 0) {
+        // Se modulo di n con il numero del ciclo è uguale a 0 non è primo
+        return false;
+      }
+    }
+    return primo ? true : false; // Ritorna il risultato
+  }
+}
+
+console.log(es29(10));
 
 function random(min, max) {
   return Math.floor(Math.random() * (max - min) + min);
