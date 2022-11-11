@@ -404,11 +404,22 @@ function onlyTheYears() {
   return out;
 }
 
-console.log(onlyTheYears());
+// console.log(onlyTheYears());
 
 /* ESERCIZIO 15
   Scrivi una funzione chiamata "onlyInLastMillennium" che ritorna solamente i film prodotto nel millennio scorso contenuti nell'array "movies" fornito.
 */
+function onlyInLastMillennium() {
+  out = []
+  for (const film of movies) {   // Avvio un cliclo for su tutti i film
+    if (film.Year < 2000) {      // Controllo se l'anno di produzione del film sia inferiore al 2000
+      out.push(film)             // Se si verifica la condizione effettuo un .push del film
+    }
+  }
+  return out
+}
+
+// console.log(onlyInLastMillennium())
 
 /* ESERCIZIO 16
   Scrivi una funzione chiamata "sumAllTheYears" che ritorna la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array "movies" fornito.
