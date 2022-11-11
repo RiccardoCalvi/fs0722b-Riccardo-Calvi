@@ -116,7 +116,7 @@ function whoIsBigger(num1, num2) {
 */
 
 function splitMe(str = "") {
-  return str.split(" ") //richiamo la funzione split con parametro " " si occuperà di cercare gli spazzi nella stringa e li userà per suddividere la stringa
+  return str.split(" "); //richiamo la funzione split con parametro " " si occuperà di cercare gli spazzi nella stringa e li userà per suddividere la stringa
 }
 
 // console.log(splitMe("CIAO COME STAI"))
@@ -128,9 +128,9 @@ function splitMe(str = "") {
 
 function deleteOne(str = "", bool = true) {
   if (bool) {
-    return str.slice(1) //richiamo la funzione slice con parametro di index = 1 così da rimuovere il primo valore (carattere) dalla stringa
+    return str.slice(1); //richiamo la funzione slice con parametro di index = 1 così da rimuovere il primo valore (carattere) dalla stringa
   } else {
-    return str.slice(0,-1) //richiamo la funzione slice con parametro di index = 0 e paramentro di end = -1 così da rimuovere l'ultimo valore (carattere) dalla stringa
+    return str.slice(0, -1); //richiamo la funzione slice con parametro di index = 0 e paramentro di end = -1 così da rimuovere l'ultimo valore (carattere) dalla stringa
   }
 }
 
@@ -143,7 +143,7 @@ function deleteOne(str = "", bool = true) {
 */
 
 function onlyLetters(str) {
-  return str.replace(/[0-9]/g, ''); //richiamo la funzione replace che tramite regex sostituisce i valori numerici con dei valori vuoti
+  return str.replace(/[0-9]/g, ""); //richiamo la funzione replace che tramite regex sostituisce i valori numerici con dei valori vuoti
 }
 
 // console.log(onlyLetters("I have 4 dogs"))
@@ -152,6 +152,13 @@ function onlyLetters(str) {
   Crea una funzione chiamata "isThisAnEmail" che riceve una stringa come parametro e ritorna true se la stringa è un valido indirizzo email.
 */
 
+function isThisAnEmail(str = "") {
+  return str.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/) // Controlla se nella stringa sia valida (tramite funzione Match) la regex (presa da Stack Overflow) sia valida
+    ? true  // se è valida ritorna TRUE
+    : false; // se NON è valida ritorna FALSE
+}
+
+// console.log(isThisAnEmail("rica@gmail.com"));
 
 /* ESERCIZIO 7
   Scrivi una funzione chiamata "whatDayIsIt" che ritorna il giorno della settimana corrente.
