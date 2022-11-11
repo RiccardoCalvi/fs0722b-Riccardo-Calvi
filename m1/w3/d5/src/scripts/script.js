@@ -351,12 +351,13 @@ function isTodayMyBirthday() {
   deve ritornare l'oggetto fornito dopo aver eliminato
   in esso la proprietà chiamata come la stringa passata come secondo parametro.
 */
-let topolino = {                                  // Creo l'oggetto topolino
+let topolino = {
+  // Creo l'oggetto topolino
   nome: "mickey",
   cognome: "mouse",
 };
-function deleteProp(ogg = {}, daEliminare) {     
-  delete ogg[daEliminare];                        // Elimino la proprietà (tramite delete) indicata nel console.log come secondo paramentro
+function deleteProp(ogg = {}, daEliminare) {
+  delete ogg[daEliminare]; // Elimino la proprietà (tramite delete) indicata nel console.log come secondo paramentro
   return ogg;
 }
 
@@ -367,10 +368,12 @@ function deleteProp(ogg = {}, daEliminare) {
 */
 
 function newestMovie() {
-  let out = movies[0];              //definisco out come il primo film dell'array di oggetti
-  for (const film of movies) {      // avvio un ciclo for su tutto l'arrat
-    if (film.Year > out.Year) {     // controllo se l'anno di uscita del film preso dal ciclo è maggiore dell'anno della variabile out
-      out = film;                   // se si verifica la condizione sostituisco il film
+  let out = movies[0]; //definisco out come il primo film dell'array di oggetti
+  for (const film of movies) {
+    // avvio un ciclo for su tutto l'arrat
+    if (film.Year > out.Year) {
+      // controllo se l'anno di uscita del film preso dal ciclo è maggiore dell'anno della variabile out
+      out = film; // se si verifica la condizione sostituisco il film
     }
   }
   return out;
@@ -383,7 +386,7 @@ function newestMovie() {
 */
 
 function countMovies() {
-  return movies.length
+  return movies.length;
 }
 
 // console.log(countMovies())
@@ -391,6 +394,17 @@ function countMovies() {
 /* ESERCIZIO 14
   Scrivi una funzione chiamata "onlyTheYears" che crea un array con solamente gli anni di uscita dei film contenuti nell'array "movies" fornito.
 */
+
+function onlyTheYears() {
+  let out = [];
+  for (const film of movies) {
+    // Avvio un cliclo for su tutti i film
+    out.push(film.Year); // Aggiungo all'array out l'anno del film preso dal ciclo
+  }
+  return out;
+}
+
+console.log(onlyTheYears());
 
 /* ESERCIZIO 15
   Scrivi una funzione chiamata "onlyInLastMillennium" che ritorna solamente i film prodotto nel millennio scorso contenuti nell'array "movies" fornito.
