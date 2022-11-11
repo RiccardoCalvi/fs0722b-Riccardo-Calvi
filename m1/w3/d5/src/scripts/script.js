@@ -94,7 +94,7 @@ function esG(ogg = {}) {
 */
 
 function dice() {
-  return random(1, 6);
+  return random(1, 6); // Richiamo la funzione random che si trova alla fine del file e gli passo 2 valori => il primo è il valore minimo e il secondo è il valore massimo
 }
 
 // console.log(dice());
@@ -104,10 +104,10 @@ function dice() {
 */
 
 function whoIsBigger(num1, num2) {
-  return num1 > num2 ? num1 : num2;
+  return num1 > num2 ? num1 : num2; // tramite una IF controllo se il primo parametro (num1) è maggiore del secondo (num2) se è così ritorno il primo parametro alternativamente ritorno il secondo parametro
 }
 
-console.log(whoIsBigger(40, 50));
+// console.log(whoIsBigger(40, 50));
 
 /* ESERCIZIO 3
   Crea una funzione chiamata "splitMe" che riceve una stringa come parametro e ritorna un'array contenente ogni parola della stringa.
@@ -116,7 +116,7 @@ console.log(whoIsBigger(40, 50));
 */
 
 function splitMe(str = "") {
-  return str.split(" ")
+  return str.split(" ") //richiamo la funzione split con parametro " " si occuperà di cercare gli spazzi nella stringa e li userà per suddividere la stringa
 }
 
 // console.log(splitMe("CIAO COME STAI"))
@@ -126,7 +126,15 @@ function splitMe(str = "") {
   Se il valore booleano è true la funzione deve ritornare la stringa senza il primo carattere, altrimenti la deve ritornare senza l'ultimo.
 */
 
+function deleteOne(str = "", bool = true) {
+  if (bool) {
+    return str.slice(1) //richiamo la funzione slice con parametro di index = 1 così da rimuovere il primo valore (carattere) dalla stringa
+  } else {
+    return str.slice(0,-1) //richiamo la funzione slice con parametro di index = 0 e paramentro di end = -1 così da rimuovere l'ultimo valore (carattere) dalla stringa
+  }
+}
 
+// console.log(deleteOne("CIAO come stai"))
 
 /* ESERCIZIO 5
   Crea una funzione chiamata "onlyLetters" che riceve una stringa come parametro e la ritorna eliminando tutte le cifre numeriche.
@@ -134,9 +142,16 @@ function splitMe(str = "") {
   Es.: onlyLetters("I have 4 dogs") => ritorna "I have dogs"
 */
 
+function onlyLetters(str) {
+  return str.replace(/[0-9]/g, ''); //richiamo la funzione replace che tramite regex sostituisce i valori numerici con dei valori vuoti
+}
+
+// console.log(onlyLetters("I have 4 dogs"))
+
 /* ESERCIZIO 6
   Crea una funzione chiamata "isThisAnEmail" che riceve una stringa come parametro e ritorna true se la stringa è un valido indirizzo email.
 */
+
 
 /* ESERCIZIO 7
   Scrivi una funzione chiamata "whatDayIsIt" che ritorna il giorno della settimana corrente.
