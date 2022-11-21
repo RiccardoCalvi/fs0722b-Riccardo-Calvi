@@ -1,10 +1,19 @@
-@media only screen and (max-width: 768px) {
+/*
+  ____  _____ ____  _  _______ ___  ____
+ |  _ \| ____/ ___|| |/ /_   _/ _ \|  _ \
+ | | | |  _| \___ \| ' /  | || | | | |_) |
+ | |_| | |___ ___) | . \  | || |_| |  __/
+ |____/|_____|____/|_|\_\ |_| \___/|_|
+
+*/
+@media only screen and (min-width: 1200px) {
   /* IMPOSTAZIONI GENERALI */
   html {
     font-size: 62.5%;
   }
 
   body {
+    display: none;
     font-family: Poppins, "Helvetica Neue", sans-serif;
     font-size: 1.4rem;
     line-height: 1.5;
@@ -469,14 +478,15 @@
 }
 
 /*
-  ____  _____ ____  _  _______ ___  ____
- |  _ \| ____/ ___|| |/ /_   _/ _ \|  _ \
- | | | |  _| \___ \| ' /  | || | | | |_) |
- | |_| | |___ ___) | . \  | || |_| |  __/
- |____/|_____|____/|_|\_\ |_| \___/|_|
+  __  __  ___  ____ ___ _     _____
+ |  \/  |/ _ \| __ )_ _| |   | ____|
+ | |\/| | | | |  _ \| || |   |  _|
+ | |  | | |_| | |_) | || |___| |___
+ |_|  |_|\___/|____/___|_____|_____|
 
 */
-@media only screen and (min-width: 1200px) {
+
+@media only screen and (max-width: 767px) {
   /* IMPOSTAZIONI GENERALI */
   html {
     font-size: 62.5%;
@@ -528,15 +538,13 @@
 
   header nav li {
     list-style: none;
+    display: inline;
+    margin-right: 10px;
   }
 
   header nav li a {
     color: white;
     text-decoration: none;
-  }
-
-  header nav li a:hover {
-    color: red;
   }
 
   header nav li a::before {
@@ -568,7 +576,7 @@
 
   /* ELEMENTI NEL MAIN - ARTICLE */
   h1 {
-    font-size: 2.6rem;
+    font-size: 4rem;
     font-weight: bold;
     letter-spacing: -0.03em;
     margin-bottom: 0.7em;
