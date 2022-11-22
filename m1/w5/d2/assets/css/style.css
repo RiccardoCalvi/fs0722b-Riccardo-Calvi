@@ -18,6 +18,10 @@ hr {
 
 /* HEADER */
 header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 100;
   background: rgb(0, 160, 198);
   background: linear-gradient(180deg, rgba(0, 160, 198, 1) 0%, rgba(3, 109, 134, 1) 68%);
   text-align: center;
@@ -91,6 +95,7 @@ main {
   padding: 2em 1em;
   margin-bottom: 1.5em;
 }
+
 @media screen and (min-width: 700px) {
   main {
     padding: 2em;
@@ -141,9 +146,60 @@ h1 + p {
   p,
   ul,
   ol {
-    font-size: 1.4rem;
+    font-size: 1rem;
   }
 
+  #titolo img {
+    position: relative;
+    top: -38px;
+    z-index: 1;
+    width: 100%;
+  }
+
+  #titolo h1 {
+    position: relative;
+    top: 0;
+    z-index: 2;
+  }
+
+  #thumbnail img{
+    float: left;
+  }
+
+  #novita h2{
+    position: relative;
+    top: -35px;
+    width: 35%;
+    text-align: center;
+    box-shadow: 1px 1px 3px black;
+    margin-bottom: -10px;
+    text-transform: uppercase;
+  }
+
+  #social {
+    position: fixed;
+    bottom: 180px;
+    right: -5px;
+  }
+  #calendar {
+    position: fixed;
+    bottom: 110px;
+    right: -5px;
+  }
+  #to_top {
+    position: fixed;
+    bottom: 40px;
+    right: -5px;
+  }
+
+  aside .fa-tag{
+    font-size: 5rem;
+    position: absolute;
+    right: 40px;
+    margin-top: -30px;
+    color: lightgray;
+  }
+  
   h2 {
     font-size: 1.8rem;
     font-weight: 700;
@@ -385,4 +441,24 @@ footer a {
   .toTop {
     display: none;
   }
+}
+
+
+
+/* PULSANTIERA */
+#controller button{
+  background-color: #ffffff80;
+  padding: 12px;  
+  border: 2px solid white;
+  box-shadow: 1px 1px 3px black;
+  font-size: 1.4rem;
+  border-radius: 10px 0px 0px 10px ;
+}
+
+#to_top a i{
+  color: red
+}
+
+#social a i, #calendar a i{
+  color: blue
 }
