@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="it">
 
+
+
 <head>
     <meta charset="utf-8">
     <title>Sviluppo di una pagina web - Blog Epicode</title>
@@ -34,14 +36,17 @@
 
     <main>
         <article class="clearfix">
-            <h1>Come creare un template per i post </h1>
+            <div id="titolo">
+                <h1>Come creare un template per i post </h1>
+                <img src="/assets/img/underline.svg" alt="#">
+            </div>
             <p><i class="fas fa-pen-square"></i> di Mario Rossi - <span><i class="fas fa-clock"></i> pubblicato il
                     25-10-2020</span></p>
-            <img src="./assets/img/badge.png" class="imgLeft" alt="logo Html5" width="70" height="70">
-            <p> La prima cosa
-                da
-                fare è suddividere in blocchi logici la pagina, identificando le <strong>parti comuni</strong> da
-                applicare a tutte le pagine</p>
+            <div id="thumbnail">
+                <img src="./assets/img/badge.png" class="imgLeft" alt="logo Html5" width="70" height="70">
+                <p> La prima cosa da fare è suddividere in blocchi logici la pagina, identificando le <strong>parti
+                        comuni</strong> da applicare a tutte le pagine</p>
+            </div>
 
             <p>Le varie aree saranno quindi suddivise in:</p>
             <ul>
@@ -109,7 +114,7 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
 
-            <section>
+            <section id="novita">
                 <h2>Novità</h2>
                 <p>Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla nostra newsletter:</p>
 
@@ -150,6 +155,15 @@
         </aside>
     </main>
 
+    <div id="controller">
+
+        <button id="social"><a href="https://facebook.com"><i class="fas fa-plus-square"></i></a></button>
+
+        <button id="calendar"><a href="https://calendar.google.com"> <i class="fas fa-calendar-alt"></i></a></button>
+
+        <button id="to_top"><a href="#top"><i class="far fa-caret-square-up"></i></a></button>
+
+    </div>
     <hr>
 
     <footer>
