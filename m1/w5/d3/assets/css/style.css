@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 75%;
+    margin: 100px auto;
+    padding: 25px 15px;
+    background-color: #FAF7E3;
+    border-radius: 100px;
+    align-items: center;
+}
+
+nav button {
+    background-color: #F3DF85;
+    border: 0px solid transparent;
+    border-radius: 30px;
+}
+nav button a {
+    color: #612407;
+    text-decoration: none;
+}
+
+nav button img {
+    width: 50px;
+    margin-right: 20px;
+}
+
+nav .secondario {
+    padding: 15px;
+}
+
+
+nav .principale {
+    padding: 15px 5px;
+    border-radius: 80px;
+}
+
+nav .principale a {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    position: relative;
+}
+
+
+
+
+
+
+
+article {
+    background-color: #FAF7E3;
+    border-radius: 30px;
+    padding: 30px;
+    width: 55%;
+    margin: 0 auto;
+    color: #612407;
+
+}
+
+article h3 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+article p {
+    text-align: justify;
+    line-height: 1.3em;
+}
+
+article img {
+    margin-top: 20px;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+   ____   _          _      ____    ____    ___
+  / ___| | |        / \    / ___|  / ___|  |_ _|
+ | |     | |       / _ \   \___ \  \___ \   | |
+ | |___  | |___   / ___ \   ___) |  ___) |  | |
+  \____| |_____| /_/   \_\ |____/  |____/  |___|
+
+*/
+
+.prodotto {
+    width: 350px;
+    margin: 100px auto;
+    color: #612407;
+}
+
+.foto {
+    width: 100%;
+    height: 350px;
+    background-image: url("../img/honey.jpg");
+    background-size: cover;
+    background-position: center center;
+    border-radius: 100px 100px 0 0;
+    margin-bottom: -10px;
+
+}
+
+.dettagli {
+    background-color: #FAF7E3;
+    margin: 0;
+    text-align: center;
+    padding: 30px 0 20px 0;
+    border-radius: 0 0 100px 100px;
+
+}
+
+.dettagli .nome {
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: left;
+    margin-left: 30px;
+}
+
+.dettagli .descrizione {
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: left;
+    margin-left: 45px;
+    margin-top: 5px;
+}
+
+.prezzo {
+    float: right;
+    position: relative;
+    top: 15px;
+    right: 40px;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.dettagli button {
+    margin-top: 15px;
+    background-color: #F3DF85;
+    padding: 7px 25px;
+    border: 0px solid transparent;
+    border-radius: 15px;
+}
+
+.dettagli button a {
+    color: #612407;
+    text-decoration: none;
+}
