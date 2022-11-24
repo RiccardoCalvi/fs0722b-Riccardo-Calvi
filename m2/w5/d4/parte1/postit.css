@@ -1,54 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
 body{
-    background-image: url("sfondo-interno-dell-ufficio-ridotto-sala-interna-sfocato-astratto-corridoio-nello-spazio-di-lavoro-con-effetto-disinnescato-161186330.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+    background-color: dimgray;
 }
 .container{
-    width: 760px;
+    display: block;
+    width: 1000px;
     margin: 0 auto;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 14px;
-    padding-top: 5px;
-    margin-top: 200px;
-    background-image: url("closeup-brown-cork-board-texture-600w-1164521320.webp");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    /* margin: 200px auto 0 auto; */
     height: 80vh;
 }
 
-#lista{
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-}
+
 li h2{
-    margin-bottom: 30px;
-    margin-top: 10px;
-    font-size: 20px;
+    margin: 20px 0;
+    font-size: 3em;
+    font-family: 'Indie Flower', cursive;
 }
+
 li p{
     margin-top: 40px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.5em;
 }
+
 #lista li{
     text-align: center;
-    margin: 0;
+    margin: 35px 25px;
     color: black;
     height: 200px;
-    width: 25%;
+    width: 20%;
     display: block;
-    font-size: 15px;
     float: left;
-    margin-right: 50px;
     box-shadow: 2px 2px 10px black;
-    text-shadow: 1px 1px 5px black;
     position: relative;
-    margin-top: 35px;
-    animation-name: muovi;
-    animation-duration: 0.5s;
-    animation-iteration-count: 1;
-    animation-timing-function: linear;
+    animation: muovi 0.5s linear 1;
+
     
 }
 @keyframes muovi {
@@ -61,36 +48,36 @@ li p{
     transform: scale(1.5) rotate(0deg);
     
     color: black;
-    text-shadow: 1px 1px 1px violet;
+    text-shadow: 1px 1px 0px black;
 }
 #post1{
-    background: linear-gradient(90deg, rgba(242,223,82,1) 12%, rgba(249,187,0,1) 68%);
+    background: linear-gradient(180deg, rgba(242,223,82,1) 12%, rgba(249,187,0,1) 68%);
     transform: rotate(10deg);
 }
 #post2{
-    background: linear-gradient(90deg, rgba(117,255,112,1) 12%, rgba(58,186,41,1) 68%);
+    background: linear-gradient(180deg, rgba(117,255,112,1) 12%, rgba(58,186,41,1) 68%);
     transform: rotate(-10deg);
 }
 #post3{
-    background:linear-gradient(90deg, rgba(194,133,251,1) 12%, rgba(176,85,255,1) 68%);
+    background:linear-gradient(180deg, rgba(194,133,251,1) 12%, rgba(176,85,255,1) 68%);
     transform: rotate(5deg);
 }
 #post4{
-    background: linear-gradient(90deg, rgba(117,255,112,1) 12%, rgba(58,186,41,1) 68%);
+    background: linear-gradient(180deg, rgba(117,255,112,1) 12%, rgba(58,186,41,1) 68%);
     transform: rotate(-10deg);
 }
 #post5{
-    background: linear-gradient(90deg, rgba(242,223,82,1) 12%, rgba(249,187,0,1) 68%);
+    background: linear-gradient(180deg, rgba(242,223,82,1) 12%, rgba(249,187,0,1) 68%);
     transform: rotate(10deg);
 }
 #post6{
-    background: linear-gradient(90deg, rgba(194,133,251,1) 12%, rgba(176,85,255,1) 68%);
+    background: linear-gradient(180deg, rgba(194,133,251,1) 12%, rgba(176,85,255,1) 68%);
     transform: rotate(-5deg);
 }
 #post7{
-    background: linear-gradient(90deg, rgba(242,223,82,1) 12%, rgba(249,187,0,1) 68%);
+    background: linear-gradient(180deg, rgba(242,223,82,1) 12%, rgba(249,187,0,1) 68%);
     transform: rotate(10deg);
 }
 #post8{
-    background: linear-gradient(90deg, rgba(117,255,112,1) 12%, rgba(58,186,41,1) 68%);
+    background: linear-gradient(180deg, rgba(117,255,112,1) 12%, rgba(58,186,41,1) 68%);
 }
