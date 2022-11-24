@@ -7,67 +7,68 @@
 6 animare le altre 2 parole
 7 ritardare progressivamente l'animazione delle altre 2 parole 
 */
-*,
-*:before,
-*:after{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Poppins",sans-serif;
-    font-size: 25px;
-    font-weight: 500;
+
+.rw-wrapper{
+	width: 80%;
+	position: relative;
+	margin: 110px auto 0 auto;
+	font-family: 'Bree Serif';
+	padding: 10px;
 }
-body{
-    height: 100vh;
-    display: grid;
-    place-items: center;
+.rw-sentence{
+	margin: 0;
+	text-align: left;
+	text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
 }
-.wrapper{
-    width: 80%;
-    position: relative;
-    border: 3px solid grey;
-    box-sizing: content-box;
-    background-color: #ffffff;
-    height: 90px;
-    padding: 50px 30px;
-    display: flex;
-    box-shadow: 0 20px 25px rgba(0,0,0,0.2);
+.rw-sentence span{
+	color: #444;
+	font-size: 200%;
+	font-weight: normal;
+}
+.rw-words{
+	display: inline;
+	text-indent: 10px;
+}
+.rw-words-1 span{
+	position: absolute;
+	opacity: 0;
+	overflow: hidden;
+	color: #6b969d;
+	animation: rotateWord 9s linear infinite 0s;
+}
+.rw-words-1 span:nth-child(2) {  
+	animation-delay: 3s; 
+	color: #6b889d;
+}
+.rw-words-1 span:nth-child(3) { 
+	animation-delay: 6s; 
+	color: #6b739d;	
 }
 
-.words{
-    overflow: hidden;
-    
+@-webkit-keyframes rotateWord {
+    0% { opacity: 0; }
+    2% { opacity: 0; -webkit-transform: translateY(-30px); }
+	5% { opacity: 1; -webkit-transform: translateY(0px);}
+    17% { opacity: 1; -webkit-transform: translateY(0px); }
+	20% { opacity: 0; -webkit-transform: translateY(30px); }
+	80% { opacity: 0; }
+    100% { opacity: 0; }
 }
-.parola{
-    display: block;
-    height: 100%;
-    padding-left: 10px;
-    color: #0e6ffc;
-    animation: spin_words 6s infinite;
+@-ms-keyframes rotateWord {
+    0% { opacity: 0; }
+    2% { opacity: 0; -ms-transform: translateY(-30px); }
+	5% { opacity: 1; -ms-transform: translateY(0px);}
+    17% { opacity: 1; -ms-transform: translateY(0px); }
+	20% { opacity: 0; -ms-transform: translateY(30px); }
+	80% { opacity: 0; }
+    100% { opacity: 0; }
 }
-@keyframes spin_words{
-    10%{
-        transform: translateY(-112%);
-    }
-    25%{
-        transform: translateY(-100%);
-    }
-    35%{
-        transform: translateY(-212%);
-    }
-    50%{
-        transform: translateY(-200%);
-    }
-    60%{
-        transform: translateY(-312%);
-    }
-    75%{
-        transform: translateY(-300%);
-    }
-    85%{
-        transform: translateY(-412%);
-    }
-    100%{
-        transform: translateY(-400%);
-    }
+@keyframes rotateWord {
+    0% { opacity: 0; }
+    2% { opacity: 0; -webkit-transform: translateY(-30px); transform: translateY(-30px); }
+	5% { opacity: 1; -webkit-transform: translateY(0px); transform: translateY(0px);}
+    17% { opacity: 1; -webkit-transform: translateY(0px); transform: translateY(0px); }
+	20% { opacity: 0; -webkit-transform: translateY(30px); transform: translateY(30px); }
+	80% { opacity: 0; }
+    100% { opacity: 0; }
 }
