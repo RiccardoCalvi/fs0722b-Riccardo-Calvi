@@ -9,80 +9,83 @@ body {
 
 }
 
-header {
-    position: sticky;
-    top: 0;
-    left: 0;
-    background-color: #ffc017;
-    border-bottom: 1px solid #191919;
-    padding: 15px 0;
-    z-index: 100;
-}
+@media screen and (min-width: 1200px) {
 
-header div {
-    display: flex;
-    width: 85%;
-    margin: 0 auto;
-    justify-content: space-between;
-}
 
-header nav ul {
-    display: inline;
-}
+    header {
+        position: sticky;
+        top: 0;
+        left: 0;
+        background-color: #ffc017;
+        border-bottom: 1px solid #191919;
+        padding: 15px 0;
+        z-index: 100;
+    }
 
-header nav li {
-    display: inline-block;
-    margin: 0 5px;
-}
+    header div {
+        display: flex;
+        width: 85%;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
 
-header nav li a {
-    text-decoration: none;
-    font-size: 0.9rem;
-}
+    header nav ul {
+        display: inline;
+    }
 
-button {
-    background-color: #191919;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 20px;
-    margin-left: 15px;
-}
+    header nav li {
+        display: inline-block;
+        margin: 0 5px;
+    }
 
-button a {
-    color: white;
-    text-decoration: none;
-}
+    header nav li a {
+        text-decoration: none;
+        font-size: 0.9rem;
+    }
 
-/* h1 p button */
-#hero {
-    background-color: #ffc017;
-    height: 35vh;
-    border-bottom: 1px solid #191919;
-}
+    button {
+        background-color: #191919;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 20px;
+        margin-left: 15px;
+    }
 
-#hero div {
-    width: 85%;
-    margin: 0 auto;
-    position: relative;
-    top: 100px;
-}
+    button a {
+        color: white;
+        text-decoration: none;
+    }
 
-#hero h1 {
-    font-size: 5rem;
-    font-family: 'Spectral', serif;
-}
+    /* h1 p button */
+    #hero {
+        background-color: #ffc017;
+        height: 350px;
+        border-bottom: 1px solid #191919;
+    }
 
-#hero p {
-    width: 300px;
-    margin: 20px 0 20px 5px;
-}
+    #hero div {
+        width: 85%;
+        margin: 0 auto;
+        position: relative;
+        top: 75px;
+    }
 
-#hero button {
-    margin: 0;
-    padding: 10px 35px;
-}
+    #hero h1 {
+        font-size: 5rem;
+        font-family: 'Spectral', serif;
+    }
 
-/*
+    #hero p {
+        width: 300px;
+        margin: 20px 0 20px 5px;
+    }
+
+    #hero button {
+        margin: 0;
+        padding: 10px 35px;
+    }
+
+    /*
   _____   ____    _____   _   _   ____
  |_   _| |  _ \  | ____| | \ | | |  _ \
    | |   | |_) | |  _|   |  \| | | | | |
@@ -91,85 +94,85 @@ button a {
 
 */
 
-#trend {
-    padding: 30px 0;
-    border-bottom: 1px solid lightgray;
+    #trend {
+        padding: 30px 0;
+        border-bottom: 1px solid lightgray;
 
-}
+    }
 
-#trending,
-.posts {
-    margin: 0 auto;
-    width: 85%;
-}
+    #trending,
+    .posts {
+        margin: 0 auto;
+        width: 85%;
+    }
 
-#trending h2,
-#trending img {
-    display: inline;
-    vertical-align: middle;
-}
+    #trending h2,
+    #trending img {
+        display: inline;
+        vertical-align: middle;
+    }
 
-#trending h2 {
-    text-transform: uppercase;
-    font-size: 0.8rem;
-    font-weight: 700;
+    #trending h2 {
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        font-weight: 700;
 
-}
+    }
 
-.posts {
+    .posts {
 
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-}
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
 
-.posts article {
-    display: inline;
-}
+    .posts article {
+        display: inline;
+    }
 
-.numero {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: lightgray;
-    position: relative;
-    left: -50px;
-    top: 25px;
-}
+    .numero {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: lightgray;
+        position: relative;
+        left: -50px;
+        top: 25px;
+    }
 
-.posts article {
-    /* margin-left: 55px; */
-    margin: 0px 0 0 55px;
-    width: 30%;
-}
+    .posts article {
+        /* margin-left: 55px; */
+        margin: 0px 0 0 55px;
+        width: 30%;
+    }
 
-.user img {
-    display: inline;
-    vertical-align: middle;
-    border-radius: 100px;
-    height: 25px;
-}
+    .user img {
+        display: inline;
+        vertical-align: middle;
+        border-radius: 100px;
+        height: 25px;
+    }
 
-.user h4 {
-    display: inline;
-    vertical-align: middle;
-    font-size: 0.7rem;
-    font-weight: 400;
-    margin-left: 5px;
-}
+    .user h4 {
+        display: inline;
+        vertical-align: middle;
+        font-size: 0.7rem;
+        font-weight: 400;
+        margin-left: 5px;
+    }
 
-#trend .posts .titolo {
-    font-size: 1rem;
-    font-weight: 600;
-    margin: 10px 0;
-}
+    #trend .posts .titolo {
+        font-size: 1rem;
+        font-weight: 600;
+        margin: 10px 0;
+    }
 
-#trend .posts .meta {
-    font-size: 0.7rem;
-    font-weight: 400;
+    #trend .posts .meta {
+        font-size: 0.7rem;
+        font-weight: 400;
 
-}
+    }
 
-/*
+    /*
   _       _
  | |__   | |   ___     __ _
  | '_ \  | |  / _ \   / _` |
@@ -178,70 +181,70 @@ button a {
                       |___/
 */
 
-#blog {
-    padding: 30px 0;
-    width: 85%;
-    margin: 0 auto;
-}
+    #blog {
+        padding: 30px 0;
+        width: 85%;
+        margin: 0 auto;
+    }
 
-#blog #left {
-    width: 425px;
-}
+    #blog #left {
+        width: 425px;
+    }
 
-#blog article{
-   margin-bottom: -80px;
-}
+    #blog article {
+        margin-bottom: -80px;
+    }
 
-#blog article .titolo {
-    font-size: 1.3rem;
-    font-weight: 600;
-    margin: 10px 0;
-}
+    #blog article .titolo {
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin: 10px 0;
+    }
 
-#blog article .descrizione {
-    font-size: 1rem;
-    font-weight: 400;
-    margin: 10px 0;
-}
+    #blog article .descrizione {
+        font-size: 1rem;
+        font-weight: 400;
+        margin: 10px 0;
+    }
 
-#blog article .stella{
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0;
-}
+    #blog article .stella {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0;
+    }
 
-#blog article .meta {
-    display: inline-block;
-    font-size: 0.9rem;
-    font-weight: 400;
-    margin-top: 15px;
-}
+    #blog article .meta {
+        display: inline-block;
+        font-size: 0.9rem;
+        font-weight: 400;
+        margin-top: 15px;
+    }
 
-#blog article .cat {
-    background-color: lightgray;
-    padding: 6px;
-    border-radius: 100px;
-}
+    #blog article .cat {
+        background-color: lightgray;
+        padding: 6px;
+        border-radius: 100px;
+    }
 
-#blog .thumbnails{
-    display: inline;
-    position: relative;
-    top: -130px;
-    left: 430px;
-    width: 200px;
-}
+    #blog .thumbnails {
+        display: inline;
+        position: relative;
+        top: -130px;
+        left: 430px;
+        width: 200px;
+    }
 
-#blog .bookmark{
-    width: 30px;
-    display: inline;
-    position: relative;
-    top: -130px;
-    left: 415px;
-}
+    #blog .bookmark {
+        width: 30px;
+        display: inline;
+        position: relative;
+        top: -130px;
+        left: 415px;
+    }
 
 
 
-/*
+    /*
   ____    ___   ____    _____   ____       _      ____
  / ___|  |_ _| |  _ \  | ____| | __ )     / \    |  _ \
  \___ \   | |  | | | | |  _|   |  _ \    / _ \   | |_) |
@@ -250,51 +253,208 @@ button a {
 
 */
 
-#blog #right {
-    float: right;
-    width: 350px;
-    position: sticky;
-    top: 90px;
-    right: 0;
-}
-#blog #right h3{
-    text-transform: uppercase;
-    font-size: 0.7rem;
-    font-weight: 500;
+    #blog #right {
+        float: right;
+        width: 350px;
+        position: sticky;
+        z-index: 100;
+        top: 90px;
+        right: 0;
+    }
+
+    #blog #right h3 {
+        text-transform: uppercase;
+        font-size: 0.7rem;
+        font-weight: 500;
+    }
+
+    #pulsanti {
+        padding: 20px 0;
+        border-bottom: 1px solid lightgray;
+    }
+
+    #blog #right button {
+        background-color: white;
+        border-radius: 3px;
+        border: 1px solid lightgray;
+        margin: 2.5px;
+
+    }
+
+    #blog #right button a {
+        color: gray;
+    }
+
+    #blog nav {
+        margin: 20px 0;
+    }
+
+    #blog nav ul {
+        display: inline;
+    }
+
+    #blog nav li {
+        display: inline-block;
+        margin: 5px 8px;
+        /* padding: 15px 5px; */
+    }
+
+    #blog nav li a {
+        text-decoration: none;
+        font-size: 0.9rem;
+    }
 }
 
-#pulsanti{
-    padding: 20px 0;
-    border-bottom: 1px solid lightgray;
-}
 
-#blog #right button{
-    background-color: white;
-    border-radius: 3px;
-    border: 1px solid lightgray;
-    margin: 2.5px;
 
-}
+@media screen and (max-width: 600px) {
 
-#blog #right button a{
-    color: gray;
-}
+    header {
+        position: sticky;
+        top: 0;
+        left: 0;
+        background-color: #ffc017;
+        border-bottom: 1px solid #191919;
+        padding: 15px 0;
+        z-index: 100;
+    }
+    header nav li:not(:last-child) {
+        display: none;
+    }
 
-#blog nav {
-    margin: 20px 0;
-}
+    header div {
+        display: flex;
+        width: 90%;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
 
-#blog nav ul {
-    display: inline;
-}
+    header nav a {
+        text-decoration: none;
+        font-size: 0.9rem;
+    }
 
-#blog nav li {
-    display: inline-block;
-    margin: 5px 8px;
-    /* padding: 15px 5px; */
-}
 
-#blog nav li a {
-    text-decoration: none;
-    font-size: 0.9rem;
+    /* h1 p button */
+    #hero {
+        background-color: #ffc017;
+        height: 400px;
+        border-bottom: 1px solid #191919;
+    }
+
+    #hero div {
+        width: 90%;
+        margin: 0 auto;
+        position: relative;
+        top: 75px;
+    }
+
+    #hero p {
+        width: 375px;
+        font-size: 1.2rem;
+        margin: 20px 0 20px 5px;
+    }
+
+    #hero button {
+        margin: 0;
+        padding: 10px 35px;
+    }
+
+    /*
+  _____   ____    _____   _   _   ____
+ |_   _| |  _ \  | ____| | \ | | |  _ \
+   | |   | |_) | |  _|   |  \| | | | | |
+   | |   |  _ <  | |___  | |\  | | |_| |
+   |_|   |_| \_\ |_____| |_| \_| |____/
+
+*/
+
+    #trending,
+    .posts {
+        width: 90%;
+    }
+
+
+    #trending h2 {
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        font-weight: 700;
+    }
+
+    .posts {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+
+
+    .posts article {
+
+        width: 90%;
+    }
+
+
+
+    /*
+  _       _
+ | |__   | |   ___     __ _
+ | '_ \  | |  / _ \   / _` |
+ | |_) | | | | (_) | | (_| |
+ |_.__/  |_|  \___/   \__, |
+                      |___/
+*/
+
+    #blog {
+        width: 90%;
+    }
+
+    #blog #left {
+        width: 90%;
+    }
+
+    #blog article {
+        width: 65%;
+    }
+
+
+
+    #blog .thumbnails {
+        display: inline;
+        position: relative;
+        top: -150px;
+        left: 325px;
+        width: 200px;
+    }
+
+    #blog .bookmark {
+        width: 30px;
+        display: inline;
+        position: relative;
+        top: -130px;
+        left: 300px;
+    }
+
+
+
+    /*
+  ____    ___   ____    _____   ____       _      ____
+ / ___|  |_ _| |  _ \  | ____| | __ )     / \    |  _ \
+ \___ \   | |  | | | | |  _|   |  _ \    / _ \   | |_) |
+  ___) |  | |  | |_| | | |___  | |_) |  / ___ \  |  _ <
+ |____/  |___| |____/  |_____| |____/  /_/   \_\ |_| \_\
+
+*/
+
+    #blog #right {
+        position: inherit;
+        padding: 20px 0;
+        width: 100%;
+    }
+
+    #blog #right h3 {
+        font-size: 0.8rem;
+    }
+
+
 }
