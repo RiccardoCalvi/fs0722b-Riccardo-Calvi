@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Spectral:wght@300;400;500;600&display=swap');
+
 /* 
 font-family: 'Roboto', sans-serif;
 font-family: 'Spectral', serif;
 */
-body{
+body {
     font-family: 'Roboto', sans-serif;
 
 }
 
-header{
+header {
     position: sticky;
     top: 0;
     left: 0;
@@ -18,35 +19,35 @@ header{
     z-index: 100;
 }
 
-header div{
+header div {
     display: flex;
     width: 85%;
     margin: 0 auto;
     justify-content: space-between;
 }
 
-header nav ul{
+header nav ul {
     display: inline;
 }
 
-header nav li{
+header nav li {
     display: inline;
     margin: 0 5px;
 }
 
-header nav li a{
+header nav li a {
     text-decoration: none;
     font-size: 0.8rem;
 }
 
- button {
+button {
     background-color: #191919;
     padding: 10px 15px;
     border: none;
     border-radius: 20px;
 }
 
- button a{
+button a {
     color: white;
     text-decoration: none;
 }
@@ -76,7 +77,7 @@ header nav li a{
     margin: 20px 0 20px 5px;
 }
 
-#hero button{
+#hero button {
     padding: 10px 35px;
 }
 
@@ -89,40 +90,43 @@ header nav li a{
 
 */
 
-#trend{
+#trend {
     padding: 30px 0;
     border-bottom: 1px solid lightgray;
 
 }
 
-#trending, .posts{
+#trending,
+.posts {
     margin: 0 auto;
     width: 85%;
 }
 
-#trending h2, #trending img{
+#trending h2,
+#trending img {
     display: inline;
     vertical-align: middle;
 }
 
-#trending h2{
+#trending h2 {
     text-transform: uppercase;
     font-size: 0.8rem;
     font-weight: 700;
 
 }
 
-.posts{
+.posts {
 
     display: flex;
     justify-content: space-between;
     flex-direction: row;
 }
 
-.posts article{
+.posts article {
     display: inline;
 }
-.numero{
+
+.numero {
     font-size: 1.8rem;
     font-weight: 700;
     color: lightgray;
@@ -131,20 +135,20 @@ header nav li a{
     top: 25px;
 }
 
-article{
+.posts article {
     /* margin-left: 55px; */
     margin: 0px 0 0 55px;
     width: 30%;
 }
 
-#trend .posts .user img {
+.user img {
     display: inline;
     vertical-align: middle;
     border-radius: 100px;
     height: 25px;
 }
 
-#trend .posts .user h4 {
+.user h4 {
     display: inline;
     vertical-align: middle;
     font-size: 0.7rem;
@@ -177,4 +181,63 @@ article{
     padding: 30px 0;
     width: 85%;
     margin: 0 auto;
+}
+
+#blog #left {
+    width: 450px;
+}
+
+#blog #right {
+    width: 40%;
+}
+
+#blog article{
+   margin-bottom: -80px;
+}
+
+#blog article .titolo {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+#blog article .descrizione {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+#blog article .stella{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+}
+
+#blog article .meta {
+    display: inline-block;
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+#blog article .cat {
+    background-color: lightgray;
+    padding: 6px;
+    border-radius: 100px;
+}
+
+#blog .thumbnails{
+    display: inline;
+    position: relative;
+    top: -130px;
+    left: 460px;
+    width: 200px;
+}
+
+#blog .bookmark{
+    width: 30px;
+    display: inline;
+    position: relative;
+    top: -130px;
+    left: 445px;
 }
