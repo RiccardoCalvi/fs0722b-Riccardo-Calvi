@@ -9,6 +9,10 @@ body {
 
 }
 
+a{
+    color: #191919;
+}
+
 @media screen and (min-width: 1200px) {
 
 
@@ -20,6 +24,10 @@ body {
         border-bottom: 1px solid #191919;
         padding: 15px 0;
         z-index: 100;
+    }
+    header .inverso{
+        background-color: red;
+
     }
 
     header div {
