@@ -56,16 +56,15 @@ button a {
 /* h1 p button */
 #hero {
     background-color: #ffc017;
-    height: 45vh;
+    height: 35vh;
     border-bottom: 1px solid #191919;
 }
 
 #hero div {
+    width: 85%;
+    margin: 0 auto;
     position: relative;
-    width: 50%;
-    top: 10vh;
-    bottom: 8vh;
-    left: 80px;
+    top: 100px;
 }
 
 #hero h1 {
@@ -74,11 +73,12 @@ button a {
 }
 
 #hero p {
-    width: 70%;
+    width: 300px;
     margin: 20px 0 20px 5px;
 }
 
 #hero button {
+    margin: 0;
     padding: 10px 35px;
 }
 
