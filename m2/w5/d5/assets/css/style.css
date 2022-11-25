@@ -550,12 +550,9 @@ body {
 */
 
     #blog #right {
-        float: right;
-        width: 350px;
-        position: sticky;
-        z-index: 100;
-        top: 90px;
-        right: 0;
+        position: inherit;
+        padding: 20px 0;
+        width: 100%;
     }
 
     #blog #right h3 {
