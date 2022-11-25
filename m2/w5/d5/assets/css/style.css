@@ -15,6 +15,7 @@ header{
     background-color: #ffc017;
     border-bottom: 1px solid #191919;
     padding: 15px 0;
+    z-index: 100;
 }
 
 header div{
@@ -38,14 +39,63 @@ header nav li a{
     font-size: 0.8rem;
 }
 
-header nav button {
+ button {
     background-color: #191919;
     padding: 10px 15px;
     border: none;
     border-radius: 20px;
 }
 
-header nav button a{
+ button a{
     color: white;
     text-decoration: none;
 }
+
+/* h1 p button */
+#hero {
+    background-color: #ffc017;
+    height: 45vh;
+    border-bottom: 1px solid #191919;
+}
+
+#hero div {
+    position: relative;
+    width: 50%;
+    top: 10vh;
+    bottom: 8vh;
+    left: 80px;
+    /* padding: 200px 0; */
+}
+
+#hero h1 {
+    font-size: 5rem;
+    font-family: 'Spectral', serif;
+}
+
+#hero p {
+    width: 70%;
+    margin: 20px 0 20px 5px;
+}
+
+#hero button{
+    padding: 10px 35px;
+}
+
+
+
+/* <section id="trend">
+    <div id="trending">
+        <i>FontAwesome</i>
+        <h2></h2>
+    </div>
+    <div id="posts">
+        <article>
+            <div class="user">
+                <img src="" alt="profilo">
+                <h4>Tom Cooper</h4>
+            </div>
+            <h3 class="titolo">Ukraine War, 23 October 2022</h3>
+            <p>Oct 23 - 5 min read</p>
+        </article>
+    </div>
+</section> */
