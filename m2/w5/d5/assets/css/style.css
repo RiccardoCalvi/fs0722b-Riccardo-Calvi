@@ -31,13 +31,13 @@ header nav ul {
 }
 
 header nav li {
-    display: inline;
+    display: inline-block;
     margin: 0 5px;
 }
 
 header nav li a {
     text-decoration: none;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 
 button {
@@ -45,6 +45,7 @@ button {
     padding: 10px 15px;
     border: none;
     border-radius: 20px;
+    margin-left: 15px;
 }
 
 button a {
@@ -184,11 +185,7 @@ button a {
 }
 
 #blog #left {
-    width: 450px;
-}
-
-#blog #right {
-    width: 40%;
+    width: 425px;
 }
 
 #blog article{
@@ -230,7 +227,7 @@ button a {
     display: inline;
     position: relative;
     top: -130px;
-    left: 460px;
+    left: 430px;
     width: 200px;
 }
 
@@ -239,5 +236,65 @@ button a {
     display: inline;
     position: relative;
     top: -130px;
-    left: 445px;
+    left: 415px;
+}
+
+
+
+/*
+  ____    ___   ____    _____   ____       _      ____
+ / ___|  |_ _| |  _ \  | ____| | __ )     / \    |  _ \
+ \___ \   | |  | | | | |  _|   |  _ \    / _ \   | |_) |
+  ___) |  | |  | |_| | | |___  | |_) |  / ___ \  |  _ <
+ |____/  |___| |____/  |_____| |____/  /_/   \_\ |_| \_\
+
+*/
+
+#blog #right {
+    float: right;
+    width: 350px;
+    position: sticky;
+    top: 90px;
+    right: 0;
+}
+#blog #right h3{
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+
+#pulsanti{
+    padding: 20px 0;
+    border-bottom: 1px solid lightgray;
+}
+
+#blog #right button{
+    background-color: white;
+    border-radius: 3px;
+    border: 1px solid lightgray;
+    margin: 2.5px;
+
+}
+
+#blog #right button a{
+    color: gray;
+}
+
+#blog nav {
+    margin: 20px 0;
+}
+
+#blog nav ul {
+    display: inline;
+}
+
+#blog nav li {
+    display: inline-block;
+    margin: 5px 8px;
+    /* padding: 15px 5px; */
+}
+
+#blog nav li a {
+    text-decoration: none;
+    font-size: 0.9rem;
 }
