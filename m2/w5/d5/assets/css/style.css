@@ -64,7 +64,6 @@ header nav li a{
     top: 10vh;
     bottom: 8vh;
     left: 80px;
-    /* padding: 200px 0; */
 }
 
 #hero h1 {
@@ -81,21 +80,101 @@ header nav li a{
     padding: 10px 35px;
 }
 
+/*
+  _____   ____    _____   _   _   ____
+ |_   _| |  _ \  | ____| | \ | | |  _ \
+   | |   | |_) | |  _|   |  \| | | | | |
+   | |   |  _ <  | |___  | |\  | | |_| |
+   |_|   |_| \_\ |_____| |_| \_| |____/
 
+*/
 
-/* <section id="trend">
-    <div id="trending">
-        <i>FontAwesome</i>
-        <h2></h2>
-    </div>
-    <div id="posts">
-        <article>
-            <div class="user">
-                <img src="" alt="profilo">
-                <h4>Tom Cooper</h4>
-            </div>
-            <h3 class="titolo">Ukraine War, 23 October 2022</h3>
-            <p>Oct 23 - 5 min read</p>
-        </article>
-    </div>
-</section> */
+#trend{
+    padding: 30px 0;
+    border-bottom: 1px solid lightgray;
+
+}
+
+#trending, .posts{
+    margin: 0 auto;
+    width: 85%;
+}
+
+#trending h2, #trending img{
+    display: inline;
+    vertical-align: middle;
+}
+
+#trending h2{
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 700;
+
+}
+
+.posts{
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.posts article{
+    display: inline;
+}
+.numero{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: lightgray;
+    position: relative;
+    left: -50px;
+    top: 25px;
+}
+
+article{
+    /* margin-left: 55px; */
+    margin: 0px 0 0 55px;
+    width: 30%;
+}
+
+#trend .posts .user img {
+    display: inline;
+    vertical-align: middle;
+    border-radius: 100px;
+    height: 25px;
+}
+
+#trend .posts .user h4 {
+    display: inline;
+    vertical-align: middle;
+    font-size: 0.7rem;
+    font-weight: 400;
+    margin-left: 5px;
+}
+
+#trend .posts .titolo {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+#trend .posts .meta {
+    font-size: 0.7rem;
+    font-weight: 400;
+
+}
+
+/*
+  _       _
+ | |__   | |   ___     __ _
+ | '_ \  | |  / _ \   / _` |
+ | |_) | | | | (_) | | (_| |
+ |_.__/  |_|  \___/   \__, |
+                      |___/
+*/
+
+#blog {
+    padding: 30px 0;
+    width: 85%;
+    margin: 0 auto;
+}
