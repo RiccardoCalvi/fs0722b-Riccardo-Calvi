@@ -1,0 +1,45 @@
+@import "variabili";
+@import "bottone";
+
+
+body{
+    margin: 0;
+    width: 100%;
+    background-color: lightgray;
+}
+
+header{
+    background-color: white;
+    padding: 15px 60px;
+    border-bottom: 1px solid $ombra;
+    box-shadow: 1px 1px 3px $colore_principale;
+    div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        img{
+            width: 70px;
+        }
+    }
+}
+
+main{
+    div{
+        padding: 0 50px;
+        h1{
+            text-align: center;
+            color: $colore_principale;
+            text-shadow: 1px 1px 1px $ombra;
+
+        }
+        img{
+            width: 65%;
+            float: left;
+            padding-right: 25px;
+        }
+        h3{
+            font-size: 150%;
+            text-decoration: underline;
+        }
+    }
+}
