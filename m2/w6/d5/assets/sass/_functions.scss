@@ -1,0 +1,10 @@
+
+@function set-color($lum){
+    @if $lum == 100{
+        @return rgb(82, 20, 220);
+    } @else if $lum > 100 {
+        @return rgb(149, 110, 233);
+    } @else {
+        @return rgb(59, 13, 159);
+    }
+}
