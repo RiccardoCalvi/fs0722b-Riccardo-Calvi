@@ -1,0 +1,13 @@
+$principale: rgb(82, 20, 220);
+$principale-light: #6026dd;
+
+$secondario: rgb(110, 55, 239);
+$secondario_light: rgb(124, 77, 234);
+$ombre: gray;
+$gradiant: linear-gradient(180deg, $secondario 0%, $principale 40%);
+
+$sm: 576px;
+$md: 768px;
+$xl: 1200px;
+
+$font-body:'Roboto', sans-serif;

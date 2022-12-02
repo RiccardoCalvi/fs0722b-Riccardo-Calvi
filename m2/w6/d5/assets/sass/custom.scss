@@ -1,0 +1,64 @@
+@import "variables";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
+
+body {
+    font-family: $font-body;
+}
+
+header {
+    color: #fff;
+}
+
+.main-menu {
+    margin-bottom: 0;
+    padding-left: 0;
+
+    li {
+        list-style-type: none;
+        margin-left: 10px;
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+}
+
+#motto {
+    background-image: url("../img/pexels-aleksandar-pasaric-325185.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 550px;
+}
+
+header,footer {
+    background: $gradiant
+}
+
+.grigio {
+    background-color: #f5f5f5;
+}
+
+
+footer {
+    .nav-link,
+    .copy,
+    .logo,
+    h5 {
+        color: white;
+    }
+}
+
+
+.btn-primary {
+    color: white;
+    background-color: $principale;
+    border-color: $principale-light
+}
+
+.btn-primary:hover {
+    color: white;
+    background-color: $secondario;
+    border-color: $secondario_light
+}
