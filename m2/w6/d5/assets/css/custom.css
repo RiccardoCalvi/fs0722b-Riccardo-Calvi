@@ -8,6 +8,25 @@ header {
   color: #fff;
 }
 
+header,
+footer {
+  background: linear-gradient(180deg, rgb(110, 55, 239) 0%, rgb(82, 20, 220) 40%);
+}
+
+footer .nav-link,
+footer .copy,
+footer .logo,
+footer h5 {
+  color: white;
+}
+
+#hero {
+  background-image: url("../img/pexels-aleksandar-pasaric-325185.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 550px;
+}
+
 .main-menu {
   margin-bottom: 0;
   padding-left: 0;
@@ -21,26 +40,8 @@ header {
   color: #fff;
 }
 
-#motto {
-  background-image: url("../img/pexels-aleksandar-pasaric-325185.jpg");
-  background-size: cover;
-  background-position: center center;
-  height: 550px;
-}
-
-header, footer {
-  background: linear-gradient(180deg, rgb(110, 55, 239) 0%, rgb(82, 20, 220) 40%);
-}
-
 .grigio {
   background-color: #f5f5f5;
-}
-
-footer .nav-link,
-footer .copy,
-footer .logo,
-footer h5 {
-  color: white;
 }
 
 .btn-primary {
