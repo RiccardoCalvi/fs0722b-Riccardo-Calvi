@@ -20,7 +20,7 @@ function Persona(nome, cognome, data) {
 }
 
 function calcolaEta(data) {
-    const anno = new Date(data).getFullYear();;
+    let anno = new Date(data).getFullYear();
     return 2022 - anno
 }
 
