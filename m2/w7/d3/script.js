@@ -1,17 +1,20 @@
 let p = document.getElementById("tempo")
 let timer = sessionStorage.getItem("tempo")
 
-setInterval(() => {
-    if (!tempo) {
-        sessionStorage.setItem("tempo", 0)
-    } else{
+function avviaTimer() {
+    tempo = setInterval(() => {
         timer++
         sessionStorage.setItem("tempo", timer)
-    }
-    p.innerHTML = timer
-},1000)
+        p.innerHTML = timer
+    },1000)
+}
 
-function timerReset() {
+function resetTimer() {
+    clearInterval(tempo)
+    avviaTimer()
+    p.innerHTML = 0
     timer = 0
     sessionStorage.setItem("tempo", timer)
 }
+
+avviaTimer()
