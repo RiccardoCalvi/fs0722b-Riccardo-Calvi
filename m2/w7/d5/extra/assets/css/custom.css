@@ -1,0 +1,22 @@
+main #titolo {
+  text-align: center;
+  padding: 2rem 0;
+}
+main .card-container {
+  padding-bottom: 3rem;
+}
+main .card {
+  width: 18rem;
+}
+main .card .card-img-top {
+  background-color: #f6f6f6;
+}
+main .card .arancione {
+  color: orange;
+  text-decoration: none;
+}
+
+footer {
+  background-color: white;
+  width: 100%;
+}/*# sourceMappingURL=custom.css.map */

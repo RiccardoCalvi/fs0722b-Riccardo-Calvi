@@ -4,9 +4,6 @@ main {
         text-align: center;
         padding: 2rem 0;
     }
-    .card-container{
-        padding-bottom: 3rem;
-    }
     .card{
         width: 18rem;
         
@@ -21,6 +18,8 @@ main {
 }
 
 footer{
-    background-color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
     width: 100%;
 }
