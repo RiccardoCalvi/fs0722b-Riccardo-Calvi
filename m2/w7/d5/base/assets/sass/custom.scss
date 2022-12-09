@@ -1,0 +1,25 @@
+main {
+    // padding: 0 4rem;
+    #titolo{
+        text-align: center;
+        padding: 2rem 0;
+    }
+    .card{
+        width: 18rem;
+        
+        .card-img-top{
+            background-color: #f6f6f6;
+        }
+        .arancione {
+            color: orange;
+            text-decoration: none;
+        }
+    }
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
