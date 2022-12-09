@@ -1,7 +1,7 @@
 let url = "https://raw.githubusercontent.com/RiccardoCalvi/fs0722b-Riccardo-Calvi/main/m2/w7/d5/api/users.json";
 var requestOptions = { method: "GET", redirect: "follow" };
 let cardContainer = document.getElementById("card-container");
-let image = {  male: "https://raw.githubusercontent.com/RiccardoCalvi/fs0722b-Riccardo-Calvi/main/m2/w7/d5/assets/img/male.png",  female: "https://raw.githubusercontent.com/RiccardoCalvi/fs0722b-Riccardo-Calvi/main/m2/w7/d5/assets/img/female.png",}
+let image = {  male: "https://raw.githubusercontent.com/RiccardoCalvi/fs0722b-Riccardo-Calvi/main/m2/w7/d5/extra/assets/img/male.png",  female: "https://raw.githubusercontent.com/RiccardoCalvi/fs0722b-Riccardo-Calvi/main/m2/w7/d5/extra/assets/img/female.png",}
 
 
 /*  
@@ -58,9 +58,8 @@ function aggiustaLinkImg(utente) {
  *  Ritorna l'array di utenti (oggetti)
  */
 async function getUser() {
-	const response = await fetch(url, requestOptions);
+	const response = await fetch(url);
 	return response.json();
-
 }
 
 /*  
