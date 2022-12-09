@@ -1,7 +1,7 @@
 let url = "https://raw.githubusercontent.com/RiccardoCalvi/fs0722b-Riccardo-Calvi/main/m2/w7/d5/api/users.json";
 var requestOptions = { method: "GET", redirect: "follow" };
 let cardContainer = document.getElementById("card-container");
-let image = {  male: "https://raw.githubusercontent.com/RiccardoCalvi/fs0722b-Riccardo-Calvi/main/m2/w7/d5/base/assets/img/male.png",  female: "https://raw.githubusercontent.com/RiccardoCalvi/fs0722b-Riccardo-Calvi/main/m2/w7/d5/base/assets/img/female.png",}
+let image = {  male: "https://raw.githubusercontent.com/RiccardoCalvi/fs0722b-Riccardo-Calvi/main/m2/w7/d5/base%20v2/assets/img/male.png",  female: "https://raw.githubusercontent.com/RiccardoCalvi/fs0722b-Riccardo-Calvi/main/m2/w7/d5/base%20v2/assets/img/female.png",}
 
 
 /*  
