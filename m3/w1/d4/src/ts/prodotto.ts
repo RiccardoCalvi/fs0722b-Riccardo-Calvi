@@ -74,7 +74,7 @@ function creaProdottiSimili(prodotto) {
         </div>
         <!-- Product actions-->
         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Vai al Prodotto</a></div>
+            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#titolo" onclick='window.localStorage.setItem("prodotto", ${prodotto.id}); window.location.href = "prodotto.html"'>Vai al Prodotto</a></div>
         </div>
     </div>
 </div>`
