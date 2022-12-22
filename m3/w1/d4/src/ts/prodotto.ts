@@ -5,6 +5,7 @@ const schedaProdotto = document.getElementById("prodotto")
 const prodottiSimili = document.getElementById("prodotti_simili")
 
 
+
 try {
     prodotti.forEach(prodotto => {
         if (prodotto.id == articolo) {
@@ -19,6 +20,7 @@ try {
 }
 
 function creaScheda(prodotto) {
+    document.title = `${prodotto.capo} - Epicode Store`;
     document.getElementById("titolo").innerHTML = prodotto.capo
     schedaProdotto.innerHTML += `<div class="container px-4 px-lg-5 my-5">
     <div class="row gx-4 gx-lg-5 align-items-center">

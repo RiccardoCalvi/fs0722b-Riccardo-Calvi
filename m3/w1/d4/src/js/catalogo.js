@@ -4,11 +4,11 @@ var Articolo = /** @class */ (function () {
     function Articolo(prodotto) {
         this.id = prodotto.id;
         this.codprod = prodotto.codprod;
-        this.collezione = prodotto.collezione;
+        this.collezione = prodotto.collezione.charAt(0).toUpperCase() + prodotto.collezione.slice(1).toLowerCase();
         this.capo = prodotto.capo.charAt(0).toUpperCase() + prodotto.capo.slice(1).toLowerCase();
         this.modello = prodotto.modello;
         this.quantita = prodotto.quantita;
-        this.colore = prodotto.colore;
+        this.colore = prodotto.colore.charAt(0).toUpperCase() + prodotto.colore.slice(1).toLowerCase();
         this.prezzoivaesclusa = prodotto.prezzoivaesclusa;
         this.prezzoivainclusa = prodotto.prezzoivainclusa;
         this.disponibile = prodotto.disponibile;
