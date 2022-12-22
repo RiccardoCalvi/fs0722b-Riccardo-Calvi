@@ -1,5 +1,6 @@
 var url = "https://raw.githubusercontent.com/RiccardoCalvi/fs0722b-Riccardo-Calvi/main/m3/w1/d4/api/Abbigliamento.json";
 var catalogo = document.getElementById("catalogo");
+var articoli = [];
 if (!window.localStorage.getItem("carrello")) {
     window.localStorage.setItem("carrello", "0");
 }
@@ -29,7 +30,6 @@ var Articolo = /** @class */ (function () {
     };
     return Articolo;
 }());
-var articoli = [];
 fetch(url, { method: 'GET', redirect: 'follow' })
     .then(function (response) { return response.json(); })
     .then(function (result) {

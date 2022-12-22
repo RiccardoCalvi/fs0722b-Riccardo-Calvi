@@ -1,6 +1,6 @@
 const url: string = "https://raw.githubusercontent.com/RiccardoCalvi/fs0722b-Riccardo-Calvi/main/m3/w1/d4/api/Abbigliamento.json"
 const catalogo = document.getElementById("catalogo")
-
+let articoli = []
 
 if (!window.localStorage.getItem("carrello")) {
     window.localStorage.setItem("carrello", "0")
@@ -46,8 +46,6 @@ class Articolo {
 
 
 }
-
-let articoli = []
 
 fetch(url, { method: 'GET', redirect: 'follow' })
     .then(response => response.json())
