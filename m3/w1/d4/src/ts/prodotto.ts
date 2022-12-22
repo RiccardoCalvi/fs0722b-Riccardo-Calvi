@@ -29,6 +29,13 @@ function creaScheda(prodotto) {
             <div class="small mb-1">SKU: ${prodotto.codprod}</div>
             <h1 class="display-5 fw-bolder">${prodotto.capo}</h1>
             <div class="fs-5 mb-5">
+            <div class="d-flex small text-warning mb-2">
+                    <div class="bi-star-fill mx-1"></div>
+                    <div class="bi-star-fill mx-1"></div>
+                    <div class="bi-star-fill mx-1"></div>
+                    <div class="bi-star-fill mx-1"></div>
+                    <div class="bi-star-fill mx-1"></div>
+            </div>
             <span class="text-decoration-line-through">€${prodotto.prezzoivainclusa}</span>
             <span>€${prodotto.prezzofinale}</span>
             </div>
