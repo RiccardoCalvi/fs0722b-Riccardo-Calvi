@@ -35,7 +35,7 @@ function creaScheda(prodotto) {
             <div class="small mb-1">Collezione: ${prodotto.collezione}</div>
             <div class="small mb-1">Colore: ${prodotto.colore}</div>
             <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium at dolorem quidem modi. Nam sequi consequatur obcaecati excepturi alias magni, accusamus eius blanditiis delectus ipsam minima ea iste laborum vero?</p>
-            <div class="small mb-1">Disponibilità: ${prodotto.quantita}</div>
+            <div class="small mb-1">Disponibilità: ${prodotto.quantita} in ${prodotto.disponibile}</div>
             <form>
                 <div class="d-flex">
                     <input class="form-control text-center me-3" id="inputQuantity" type="number" value="1" min="1" max="${prodotto.quantita}" style="max-width: 3rem" />
