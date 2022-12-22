@@ -1,6 +1,13 @@
 const url: string = "https://raw.githubusercontent.com/RiccardoCalvi/fs0722b-Riccardo-Calvi/main/m3/w1/d4/api/Abbigliamento.json"
 const catalogo = document.getElementById("catalogo")
 
+
+if (!window.localStorage.getItem("carrello")) {
+    window.localStorage.setItem("carrello", "0")
+} else {
+    document.getElementById("count_carrello").innerHTML = window.localStorage.getItem("carrello")
+}
+
 class Articolo {
     id: number;
     codprod: number;
