@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "lunghezza": 10,
+        "altezza": 10,
+        "nome": "quadrato"
+    },
+    {
+        "id": 2,
+        "lunghezza": 15,
+        "altezza": 40,
+        "nome": "rettangolo"
+    },
+    {
+        "id": 3,
+        "lunghezza": 40,
+        "altezza": 15,
+        "nome": "triangolo"
+    },
+    {
+        "id": 4,
+        "lunghezza": 10,
+        "altezza": 10,
+        "nome": "quadrato"
+    }
+]
